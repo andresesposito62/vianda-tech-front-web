@@ -2,7 +2,12 @@
 
 ## Identidad del proyecto
 
-**vianda-tech-front-web** es una página web para la compañía **Vianda Tech**.
+**vianda-tech-front-web** es una página web para la compañía **Vianda Tech**, una empresa de tecnología que desarrolla páginas web y automatiza procesos con IA para empresas.
+
+## Restricciones técnicas
+
+- HTML y CSS puros; la menor cantidad posible de JavaScript y de frameworks.
+- Referencia de look and feel: `Landing tecnológica minimalista en azul.png` (azul, minimalista, tecnológico).
 
 ## Metodología
 

@@ -5,123 +5,152 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Vianda Tech | Tecnología que impulsa tu negocio</title>
   <meta name="description" content="Desarrollamos páginas web y automatizamos procesos con IA para que tu empresa crezca sin límites.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+  <!-- Sprite de íconos (SVG inline, sin dependencias) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <linearGradient id="vg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1f6bff"/><stop offset="1" stop-color="#0a3fd6"/></linearGradient>
+    </defs>
+    <symbol id="i-logo" viewBox="0 0 40 30"><path d="M0 1h11l9 18 9-18h11L26 29H14z" fill="url(#vg)"/><path d="M14 29 3 8h8l9 17z" fill="#0a3fd6" opacity=".35"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-chev" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m18 16 4-4-4-4M6 8l-4 4 4 4M14.5 4l-5 16"/></g></symbol>
+    <symbol id="i-cpu" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M15 2v2M15 20v2M2 15h2M2 9h2M20 15h2M20 9h2M9 2v2M9 20v2"/></g></symbol>
+    <symbol id="i-puzzle" viewBox="0 0 24 24"><path fill="currentColor" d="M19.4 7.85c-.05.32.06.65.29.88l1.57 1.57c.47.47.7 1.09.7 1.7s-.23 1.23-.7 1.7l-1.6 1.61a.98.98 0 0 1-.84.28c-.47-.07-.8-.48-.97-.93a2.5 2.5 0 1 0-3.21 3.21c.45.17.86.5.93.97a.98.98 0 0 1-.28.84l-1.61 1.61a2.4 2.4 0 0 1-1.7.7 2.4 2.4 0 0 1-1.7-.7l-1.57-1.57a1.03 1.03 0 0 0-.88-.29c-.49.07-.84.5-1.02.97a2.5 2.5 0 1 1-3.24-3.24c.46-.18.89-.53.97-1.02a1.03 1.03 0 0 0-.29-.88l-1.57-1.57A2.4 2.4 0 0 1 2 12c0-.62.24-1.23.7-1.7L4.23 8.77c.24-.24.58-.35.92-.3.52.08.88.53 1.07 1.01a2.5 2.5 0 1 0 3.26-3.26c-.48-.2-.93-.56-1.01-1.07-.05-.34.06-.68.3-.92l1.52-1.52A2.4 2.4 0 0 1 12 2c.62 0 1.23.24 1.7.7l1.57 1.57c.23.23.56.34.88.29.49-.07.84-.5 1.02-.97a2.5 2.5 0 1 1 3.24 3.24c-.46.18-.89.53-.97 1.02Z"/></symbol>
+    <symbol id="i-rocket" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></g></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></g></symbol>
+    <symbol id="i-zap" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></symbol>
+    <symbol id="i-headset" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm0 0a9 9 0 1 1 18 0m0 0v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3Z"/><path d="M21 16v2a4 4 0 0 1-4 4h-5"/></g></symbol>
+    <symbol id="i-in" viewBox="0 0 24 24"><path fill="currentColor" d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zM4 3a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"/></symbol>
+    <symbol id="i-yt" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M6 4h12a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8a4 4 0 0 1 4-4zm4 5v6l5-3z"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path fill="currentColor" d="M18 3h3l-7.5 8.6L22 21h-6.5l-5-6.2L5 21H2l8-9.2L2 3h6.6l4.5 5.7z"/></symbol>
+  </svg>
+
   <header class="hero">
-    <nav class="nav container" aria-label="Principal">
-      <a class="logo" href="#">
-        <svg viewBox="0 0 40 32" width="38" height="30" aria-hidden="true"><path d="M0 2h12l8 17L28 2h12L26 30h-12z" fill="currentColor"/></svg>
-        Vianda Tech
-      </a>
-      <ul class="nav__links">
-        <li class="has-menu">
-          <a href="#servicios">Servicios &#9662;</a>
-          <ul class="submenu">
-            <li><a href="#servicios">Desarrollo Web</a></li>
-            <li><a href="#servicios">Automatización con IA</a></li>
-            <li><a href="#servicios">Integraciones</a></li>
-          </ul>
-        </li>
-        <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#nosotros">Nosotros</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-      <a class="btn btn--small" href="#contacto">Hablemos &rarr;</a>
+    <nav class="nav" aria-label="Principal">
+      <div class="container nav__inner">
+        <a class="logo" href="#"><svg width="38" height="29"><use href="#i-logo"/></svg>Vianda Tech</a>
+        <ul class="nav__links">
+          <li class="has-menu">
+            <a href="#servicios">Servicios <svg class="chev" width="10" height="10"><use href="#i-chev"/></svg></a>
+            <ul class="submenu">
+              <li><a href="#servicios">Desarrollo Web</a></li>
+              <li><a href="#servicios">Automatización con IA</a></li>
+              <li><a href="#servicios">Integraciones</a></li>
+            </ul>
+          </li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <a class="btn btn--nav" href="#contacto">Hablemos <svg width="12" height="12"><use href="#i-arrow"/></svg></a>
+      </div>
     </nav>
 
-    <div class="hero__body container">
+    <div class="container hero__body">
       <h1>Tecnología que<br>impulsa tu <em>negocio</em></h1>
       <p>Desarrollamos páginas web y automatizamos procesos con IA para que tu empresa crezca sin límites.</p>
       <div class="hero__actions">
-        <a class="btn" href="#servicios">Descubrir más &rarr;</a>
-        <a class="play" href="#proyectos"><span aria-hidden="true">&#9654;</span> Ver proyectos</a>
+        <a class="btn" href="#servicios">Descubrir más <svg width="14" height="14"><use href="#i-arrow"/></svg></a>
+        <a class="play" href="#proyectos"><span class="play__dot"><svg width="14" height="14"><use href="#i-play"/></svg></span>Ver proyectos</a>
       </div>
     </div>
-    <div class="hero__visual" aria-hidden="true"><div class="laptop"><span>V</span></div></div>
+
+    <div class="hero__visual" aria-hidden="true">
+      <div class="scene"></div>
+      <div class="desk"></div>
+      <div class="laptop"><svg width="64" height="48"><use href="#i-logo"/></svg></div>
+      <div class="laptop-base"></div>
+      <div class="plant"></div>
+    </div>
   </header>
 
   <main>
-    <section class="split container" id="servicios">
-      <div class="split__intro">
+    <section class="container row row--services" id="servicios">
+      <div class="row__intro">
         <p class="eyebrow">Nuestros servicios</p>
         <h2>Soluciones digitales para empresas</h2>
       </div>
       <ul class="services">
         <li>
           <a class="card" href="#">
-            <span class="icon">&lt;/&gt;</span>
+            <span class="icon"><svg width="22" height="22"><use href="#i-code"/></svg></span>
             <h3>Desarrollo Web</h3>
             <p>Sitios y aplicaciones web modernas y escalables.</p>
-            <i>&rarr;</i>
+            <svg class="card__arrow" width="16" height="16"><use href="#i-arrow"/></svg>
           </a>
         </li>
         <li>
           <a class="card" href="#">
-            <span class="icon">&#9881;</span>
+            <span class="icon"><svg width="22" height="22"><use href="#i-cpu"/></svg></span>
             <h3>Automatización con IA</h3>
             <p>Optimiza procesos y potencia tu productividad.</p>
-            <i>&rarr;</i>
+            <svg class="card__arrow" width="16" height="16"><use href="#i-arrow"/></svg>
           </a>
         </li>
         <li>
           <a class="card" href="#">
-            <span class="icon">&#10022;</span>
+            <span class="icon"><svg width="22" height="22"><use href="#i-puzzle"/></svg></span>
             <h3>Integraciones</h3>
             <p>Conecta tus herramientas y sistemas.</p>
-            <i>&rarr;</i>
+            <svg class="card__arrow" width="16" height="16"><use href="#i-arrow"/></svg>
           </a>
         </li>
       </ul>
     </section>
 
-    <section class="split container" id="proyectos">
-      <div class="split__intro">
+    <section class="container row row--projects" id="proyectos">
+      <div class="row__intro">
         <p class="eyebrow">Proyectos</p>
-        <h2>Resultados que generan valor</h2>
-        <a class="link" href="#">Ver más proyectos &rarr;</a>
+        <h2>Resultados<br>que generan valor</h2>
+        <a class="link" href="#">Ver más proyectos <svg width="13" height="13"><use href="#i-arrow"/></svg></a>
       </div>
       <ul class="projects">
-        <li class="project project--1" role="img" aria-label="Panel de métricas en laptop"></li>
-        <li class="project project--2" role="img" aria-label="Edificio corporativo"></li>
-        <li class="project project--3" role="img" aria-label="Aplicación móvil"></li>
+        <li class="project project--1" role="img" aria-label="Panel de métricas en una laptop"></li>
+        <li class="project project--2" role="img" aria-label="Edificio corporativo de vidrio"></li>
+        <li class="project project--3" role="img" aria-label="Aplicación móvil en un teléfono"></li>
       </ul>
     </section>
 
     <section class="stats" aria-label="Cifras">
       <ul class="container">
-        <li><span aria-hidden="true">&#128640;</span><div><strong>+100</strong>Proyectos entregados</div></li>
-        <li><span aria-hidden="true">&#128737;</span><div><strong>99.9%</strong>Disponibilidad</div></li>
-        <li><span aria-hidden="true">&#9889;</span><div><strong>Mayor eficiencia</strong>para tu negocio</div></li>
-        <li><span aria-hidden="true">&#127911;</span><div><strong>Soporte experto</strong></div></li>
+        <li><svg width="32" height="32"><use href="#i-rocket"/></svg><div><strong>+100</strong>Proyectos entregados</div></li>
+        <li><svg width="32" height="32"><use href="#i-shield"/></svg><div><strong>99.9%</strong>Disponibilidad</div></li>
+        <li><svg width="32" height="32"><use href="#i-zap"/></svg><div><strong>Mayor eficiencia</strong>para tu negocio</div></li>
+        <li><svg width="32" height="32"><use href="#i-headset"/></svg><div class="stats__plain">Soporte experto</div></li>
       </ul>
     </section>
 
     <section class="cta" id="contacto">
-      <h2>¿Listo para llevar tu empresa <em>al siguiente nivel?</em></h2>
+      <h2>¿Listo para llevar tu empresa<br><em>al siguiente nivel?</em></h2>
       <p>Hablemos sobre tu proyecto y descubre cómo la tecnología puede impulsar tu crecimiento.</p>
-      <a class="btn" href="mailto:contacto@viandatech.com">Contactar ahora &rarr;</a>
+      <a class="btn" href="mailto:contacto@viandatech.com">Contactar ahora <svg width="14" height="14"><use href="#i-arrow"/></svg></a>
     </section>
   </main>
 
-  <footer class="footer">
-    <a class="logo" href="#">
-      <svg viewBox="0 0 40 32" width="34" height="27" aria-hidden="true"><path d="M0 2h12l8 17L28 2h12L26 30h-12z" fill="currentColor"/></svg>
-      Vianda Tech
-    </a>
+  <footer class="footer" id="nosotros">
+    <a class="logo" href="#"><svg width="38" height="29"><use href="#i-logo"/></svg>Vianda Tech</a>
+    <span class="footer__line footer__line--s" aria-hidden="true"></span>
     <nav aria-label="Pie">
       <a href="#servicios">Servicios</a>
-      <a href="#proyectos">Proyectos</a>
+      <a href="#proyectos" aria-current="page">Proyectos</a>
       <a href="#nosotros">Nosotros</a>
-      <a href="#blog">Blog</a>
+      <a href="#blog" id="blog">Blog</a>
       <a href="#contacto">Contacto</a>
     </nav>
+    <span class="footer__line footer__line--l" aria-hidden="true"></span>
     <div class="footer__social">
-      <a href="#" aria-label="LinkedIn">in</a>
-      <a href="#" aria-label="YouTube">&#9654;</a>
-      <a href="#" aria-label="X">X</a>
+      <a href="#" aria-label="LinkedIn"><svg width="20" height="20"><use href="#i-in"/></svg></a>
+      <a href="#" aria-label="YouTube"><svg width="22" height="22"><use href="#i-yt"/></svg></a>
+      <a href="#" aria-label="X"><svg width="18" height="18"><use href="#i-x"/></svg></a>
     </div>
     <small>&copy; 2025 Vianda Tech. Todos los derechos reservados.</small>
   </footer>
