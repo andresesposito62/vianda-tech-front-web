@@ -72,7 +72,7 @@ h1, h2, h3 { letter-spacing: -.025em; }
 
 /* Filas con intro a la izquierda */
 .row { display: grid; grid-template-columns: 299px 1fr; align-items: start; }
-.eyebrow { font-size: 12px; font-weight: 500; text-transform: uppercase; color: var(--primary-text); letter-spacing: 0; }
+.eyebrow { font-size: 12px; font-weight: 500; text-transform: uppercase; color: var(--muted); letter-spacing: 0; }
 .row h2 { max-width: 270px; font-size: 26.5px; line-height: 26px; font-weight: 700; margin-top: 9px; }
 .link { display: inline-flex; align-items: center; gap: 5px; margin-top: 18px; font-size: 13px; font-weight: 500; color: var(--primary-text); }
 
