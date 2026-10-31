@@ -150,8 +150,9 @@ h1, h2, h3 { letter-spacing: -.025em; }
 @media (max-width: 1000px) {
   .nav__links { display: none; }
   .nav__inner { gap: 1rem; }
-  /* Barra superior como banda propia: fondo claro, borde fino y sombra suave que la separa del carrusel */
-  .nav { background: rgba(255,255,255,.88); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); box-shadow: 0 10px 24px -8px rgba(0,49,83,.14); }
+  /* Barra superior: fondo blanco que se difumina hacia abajo, sin borde ni corte con el carrusel */
+  .nav { height: 92px; background: linear-gradient(180deg, rgba(255,255,255,.95) 0%, rgba(255,255,255,.8) 45%, rgba(255,255,255,.35) 80%, rgba(255,255,255,0) 100%); }
+  .nav__inner { padding-bottom: 12px; }
   .hero { height: auto; }
   .hero__carousel { position: relative; inset: auto; }
   .hero__body { padding-top: 40px; }

@@ -51,7 +51,7 @@ La palabra en negrita de cada titular usa `--accent`. Las diapositivas 2 a 4 cor
 ## Comportamiento responsive
 
 - **Escritorio (más de 1000 px):** la diapositiva ocupa el hero de 385 px de alto. El portátil queda a la derecha del texto y los puntos debajo.
-- **Móvil y tablet (1000 px o menos):** el portátil va debajo del texto, a ancho completo y con 300 px de alto. Los puntos y el botón de pausa no se muestran (RF-10). Se navega con swipe o esperando el avance automático. La barra superior (logotipo y "Hablemos") es una banda propia con fondo blanco translúcido, desenfoque, borde fino y sombra suave, para separarla visualmente del carrusel. En escritorio no tiene fondo.
+- **Móvil y tablet (1000 px o menos):** el portátil va debajo del texto, a ancho completo y con 300 px de alto. Los puntos y el botón de pausa no se muestran (RF-10). Se navega con swipe o esperando el avance automático. La barra superior (logotipo y "Hablemos") tiene un fondo blanco que se difumina hacia abajo hasta ser transparente, sin borde ni sombra, para separarla visualmente del carrusel sin un corte marcado. En escritorio no tiene fondo.
 
 ## Puntos abiertos
 
