@@ -99,12 +99,13 @@ h1, h2, h3 { letter-spacing: -.025em; }
 .row--services .row__intro { padding-top: 18px; }
 .services { display: grid; grid-template-columns: 258fr 278fr 282fr; gap: 15px; border-left: 1px solid var(--line); padding-left: 30px; position: relative; }
 .services::before { content: ""; position: absolute; left: -1px; top: -1px; bottom: -1px; width: 1px; background: #fff; height: 15px; }
-.card { position: relative; display: block; height: 138px; padding: 14px 20px 0; background: var(--panel); border: 1px solid #f0f2f8; border-radius: 14px; transition: border-color .2s, transform .2s; }
+.services > li { display: flex; }
+.card { position: relative; display: block; flex: 1; min-height: 138px; padding: 14px 20px 16px; background: var(--panel); border: 1px solid #f0f2f8; border-radius: 14px; transition: border-color .2s, transform .2s; }
 .card:hover { border-color: var(--primary-text); transform: translateY(-2px); }
 .icon { display: grid; place-items: center; width: 46px; height: 46px; border-radius: 50%; background: var(--primary-soft); color: var(--primary-text); }
 .card h3 { margin-top: 7px; font-size: 15px; line-height: 20px; font-weight: 700; letter-spacing: -.01em; }
 .card p { margin-top: 3px; padding-right: 36px; font-size: 12.5px; line-height: 16px; color: var(--muted); }
-.card__arrow { position: absolute; right: 18px; top: 100px; color: var(--ink); }
+.card__arrow { position: absolute; right: 18px; bottom: 16px; color: var(--ink); }
 
 /* Franja de cifras */
 .stats { margin-top: 20px; height: 58px; background: var(--surface); }
@@ -182,12 +183,12 @@ h1, h2, h3 { letter-spacing: -.025em; }
   .services { border-left: 0; padding-left: 0; grid-template-columns: 1fr; gap: 12px; }
   .services::before { display: none; }
   /* Tarjeta de servicio horizontal: ícono a la izquierda, texto a la derecha */
-  .card { display: grid; grid-template-columns: 44px 1fr; column-gap: 14px; align-items: center; height: auto; padding: 16px 44px 16px 16px; }
+  .card { display: grid; grid-template-columns: 44px 1fr; column-gap: 14px; align-items: center; min-height: 0; padding: 16px 44px 16px 16px; }
   .card:hover { transform: none; }
   .icon { grid-row: 1 / span 2; width: 44px; height: 44px; }
   .card h3 { margin: 0; font-size: 16px; }
   .card p { margin: 2px 0 0; padding-right: 0; font-size: 14px; line-height: 20px; }
-  .card__arrow { right: 16px; top: 50%; transform: translateY(-50%); }
+  .card__arrow { right: 16px; bottom: auto; top: 50%; transform: translateY(-50%); }
   .stats { height: auto; margin-top: 40px; padding-block: 20px; }
   .stats ul { grid-template-columns: 1fr 1fr; gap: 20px 12px; }
   .stats li { justify-content: flex-start; margin-block: 0; border-right: 0; font-size: 13px; }
