@@ -31,7 +31,7 @@ Implementación: `index.html` (`.hero__carousel`), `styles.css` (sección "Carru
 
 | # | Titular | Pantalla del portátil |
 |---|---|---|
-| 1 | Tecnología que impulsa tu **negocio** | Logotipo (`logo-mark.png`) |
+| 1 | Tecnología que impulsa tu **negocio** | Foto de dos personas con un portátil e íconos flotantes (`assets/hero-1.jpg`), en lugar del portátil |
 | 2 | Páginas web que trabajan por **ti** | Ícono de código |
 | 3 | Procesos que se automatizan con **IA** | Ícono de chip |
 | 4 | Tus herramientas, todas **conectadas** | Ícono de puzzle |
@@ -51,8 +51,8 @@ La palabra en negrita de cada titular usa `--accent`. Las diapositivas 2 a 4 cor
 
 ## Comportamiento responsive
 
-- **Escritorio (más de 1000 px):** la diapositiva ocupa el hero de 385 px de alto. El portátil queda a la derecha del texto y los puntos debajo.
-- **Móvil y tablet (1000 px o menos):** el portátil va debajo del texto, a ancho completo y con 210 px de alto, y el hero completo mide unos 530 px para caber en la primera pantalla. Los titulares usan tamaño fluido (`clamp(30px, 8.6vw, 42px)`), la descripción 15 px con interlineado 22 px, y los botones 44 px de alto (objetivo táctil recomendado). Los puntos y el botón de pausa no se muestran (RF-10). Se navega con swipe o esperando el avance automático. La barra superior (logotipo y "Hablemos") tiene un fondo blanco que se difumina hacia abajo hasta ser transparente, sin borde ni sombra, para separarla visualmente del carrusel sin un corte marcado. En escritorio no tiene fondo.
+- **Escritorio (más de 1000 px):** la diapositiva ocupa el hero de 500 px de alto. El portátil queda a la derecha del texto y los puntos debajo.
+- **Móvil y tablet (1000 px o menos):** el portátil va debajo del texto, a ancho completo y con 300 px de alto, y el hero completo mide unos 620 px para caber en la primera pantalla. Los titulares usan tamaño fluido (`clamp(30px, 8.6vw, 42px)`), la descripción 15 px con interlineado 22 px, y los botones 44 px de alto (objetivo táctil recomendado). Los puntos y el botón de pausa no se muestran (RF-10). Se navega con swipe o esperando el avance automático. La barra superior (logotipo y "Hablemos") tiene un fondo blanco que se difumina hacia abajo hasta ser transparente, sin borde ni sombra, para separarla visualmente del carrusel sin un corte marcado. En escritorio no tiene fondo.
 
 ## Puntos abiertos
 
