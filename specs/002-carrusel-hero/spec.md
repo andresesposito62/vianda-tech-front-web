@@ -17,11 +17,11 @@ Implementación: `index.html` (`.hero__carousel`), `styles.css` (sección "Carru
 | RF-03 | El fondo del hero (escena y escritorio) permanece fijo durante el desplazamiento. |
 | RF-04 | El carrusel avanza solo cada **6 segundos**. La animación de desplazamiento dura **700 ms**. |
 | RF-05 | El carrusel es un bucle continuo. Tras la última diapositiva se vuelve a la primera avanzando en el mismo sentido, sin rebobinar. |
-| RF-06 | En escritorio hay un indicador de puntos, uno por diapositiva, que marca la activa. Al pulsar un punto se salta a esa diapositiva y se reinicia el temporizador. En móvil los puntos están ocultos (RF-10). |
+| RF-06 | En escritorio hay un indicador de puntos, uno por diapositiva, que marca la activa. Al pulsar un punto se salta a esa diapositiva y se reinicia el temporizador. En móvil los puntos son solo un indicador de posición y no se pueden tocar (RF-10). |
 | RF-07 | En escritorio hay un botón de pausa junto a los puntos. Alterna entre pausar y reanudar el avance automático, y su ícono refleja el estado actual. En móvil está oculto (RF-10). |
 | RF-08 | El avance automático se detiene mientras el cursor está sobre el hero o hay foco de teclado dentro de él, y también cuando la pestaña no está visible. Al salir se reanuda, salvo que el usuario haya pausado con el botón. |
 | RF-09 | Con la preferencia del sistema "reducir movimiento", el carrusel arranca pausado, sin animación de desplazamiento, y el botón de pausa muestra "reanudar". |
-| RF-10 | En móvil y tablet (1000 px o menos) no hay botones para mover el carrusel. Solo se mueve de dos formas: automáticamente, o cuando el usuario desliza el dedo (swipe) sobre la animación. |
+| RF-10 | En móvil y tablet (1000 px o menos) no hay botones para mover el carrusel (los puntos son solo un indicador). Solo se mueve de dos formas: automáticamente, o cuando el usuario desliza el dedo (swipe) sobre la animación. |
 | RF-11 | El swipe es horizontal: la diapositiva sigue al dedo y, al soltar, avanza a la siguiente (deslizar a la izquierda) o vuelve a la anterior (a la derecha) si el arrastre supera el 15 % del ancho. Si es menor, regresa a su sitio. El swipe también funciona en el bucle: hacia atrás desde la primera se llega a la última. |
 | RF-12 | Un swipe vertical sigue desplazando la página con normalidad, y un arrastre no activa los botones ni enlaces que haya debajo del dedo. Mientras el dedo está sobre el carrusel, el avance automático se detiene. |
 | RF-13 | Tras el primer swipe, el avance automático se detiene y no se reanuda solo (en escritorio táctil, el botón de pausa pasa a "reanudar"). Un simple toque sin arrastre no cuenta como swipe. |
@@ -58,7 +58,7 @@ La palabra en negrita de cada titular usa `--accent`. La diapositiva 1 es el men
 ## Comportamiento responsive
 
 - **Escritorio (más de 1000 px):** la diapositiva ocupa el hero de 500 px de alto. El portátil queda a la derecha del texto y los puntos debajo.
-- **Móvil y tablet (1000 px o menos):** el portátil va debajo del texto, a ancho completo y con 300 px de alto, y el hero completo mide unos 620 px para caber en la primera pantalla. Los titulares usan tamaño fluido (`clamp(30px, 8.6vw, 42px)`), la descripción 15 px con interlineado 22 px, y los botones 44 px de alto (objetivo táctil recomendado). Los puntos y el botón de pausa no se muestran (RF-10). Se navega con swipe o esperando el avance automático. La barra superior (logotipo y "Hablemos") tiene un fondo blanco que se difumina hacia abajo hasta ser transparente, sin borde ni sombra, para separarla visualmente del carrusel sin un corte marcado. En escritorio no tiene fondo.
+- **Móvil y tablet (1000 px o menos):** la ilustración (foto o portátil) va **arriba**, a ancho completo y con 230 px de alto, y el texto va debajo. Todas las diapositivas tienen el mismo alto, y la descripción reserva 3 renglones (66 px) para que el botón "Descubrir más" quede siempre a la misma altura. Los titulares usan tamaño fluido (`clamp(28px, 8vw, 36px)`), la descripción 15 px con interlineado 22 px, y el botón 44 px de alto (objetivo táctil recomendado). Debajo del botón hay puntos que solo indican la diapositiva actual (no se pueden tocar) y el botón de pausa no se muestra (RF-10). Se navega con swipe o esperando el avance automático. La barra superior (logotipo y "Hablemos") tiene un fondo blanco que se difumina hacia abajo hasta ser transparente, sin borde ni sombra, para separarla visualmente del carrusel sin un corte marcado. En escritorio no tiene fondo.
 
 ## Puntos abiertos
 

@@ -160,20 +160,22 @@ h1, h2, h3 { letter-spacing: -.025em; }
   .logo img { height: 52px; }
   .btn { height: 44px; }
   .btn--nav { height: 36px; }
-  /* Hero compacto: tipografía fluida, objetivos táctiles de 44px y una ilustración baja para que todo quepa en la primera pantalla */
+  /* Hero móvil: la ilustración va arriba (mismo alto en todas las diapositivas) y el texto debajo, con el botón siempre a la misma altura */
   .hero { height: auto; }
   .hero__carousel { position: relative; inset: auto; }
-  .hero__body { padding-top: 16px; }
-  .hero h1, .hero h2 { font-size: clamp(30px, 8.6vw, 42px); line-height: 1.08; }
-  .hero p { margin: 12px 0 20px; font-size: 15px; line-height: 22px; }
-
-  .hero__device { position: relative; top: auto; bottom: auto; right: auto; width: 100%; height: 300px; margin-top: 16px; -webkit-mask-image: none; mask-image: none; }
-  .hero__visual { top: auto; width: 100%; height: 300px; -webkit-mask-image: none; mask-image: none; }
+  .hero__slide { display: flex; flex-direction: column; }
+  .hero__body { padding-top: 18px; padding-bottom: 26px; }
+  .hero h1, .hero h2 { font-size: clamp(28px, 8vw, 36px); line-height: 1.08; }
+  .hero p { min-height: 66px; margin: 10px 0 18px; font-size: 15px; line-height: 22px; }
+  .hero__device { order: -1; position: relative; top: auto; bottom: auto; right: auto; width: 100%; height: 230px; margin-top: 0; -webkit-mask-image: none; mask-image: none; }
+  .hero__visual { top: 76px; bottom: auto; width: 100%; height: 230px; -webkit-mask-image: none; mask-image: none; }
   .desk { height: 48px; }
-  .laptop { left: 26%; bottom: 52px; transform: perspective(900px) rotateY(-38deg) rotateZ(-4deg) skewY(-6deg) scale(.57); }
-  .laptop-base { bottom: 26px; width: 56%; }
+  .laptop { left: 24%; bottom: 44px; transform: perspective(900px) rotateY(-38deg) rotateZ(-4deg) skewY(-6deg) scale(.5); }
+  .laptop-base { bottom: 22px; width: 56%; }
   .laptop__icon { width: 84px; height: 84px; }
-  .hero__dots { display: none; }
+  /* Indicador de posición: los puntos se muestran solo como referencia (se avanza con swipe o automáticamente) */
+  .hero__dots { position: static; justify-content: center; padding: 0 0 18px; pointer-events: none; }
+  .hero__pause { display: none; }
   /* Secciones: ritmo vertical de 32-40px, texto mínimo de 14px y objetivos táctiles de 44px */
   .row { grid-template-columns: 1fr; gap: 20px; }
   .row h2 { max-width: none; font-size: 24px; line-height: 1.15; }
