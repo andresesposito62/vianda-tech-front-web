@@ -28,7 +28,7 @@ Implementación: `index.html` (`.hero__carousel`), `styles.css` (sección "Carru
 | RF-14 | La descripción de cada diapositiva (el texto bajo el titular) no debe superar **dos renglones** en ninguna pantalla. Si se cambia el texto, hay que comprobar que siga cumpliéndolo, sobre todo en móvil. |
 | RF-15 | Jerarquía y legibilidad: el CTA principal ("Descubrir más") es un botón relleno y único (no hay botón secundario). La barra superior lleva un degradado suave de fondo en escritorio para que el menú se lea sobre la foto. |
 | RF-16 | Entre 1001 y 1280 px la ilustración ocupa el 50 % del ancho (no el 56 %) para no solaparse con el titular. El portátil de las diapositivas 2 a 7 mide 340 × 208 px en escritorio y está apoyado sobre su base. |
-| RF-17 | En escritorio la foto de la diapositiva 1 no llega al borde superior: arranca bajo la barra de navegación (76 px) con un borde superior nítido, sin difuminado. El encuadre está centrado en los rostros. En móvil va debajo del texto, sin cambios. |
+| RF-17 | En escritorio la foto de la diapositiva 1 no llega al borde superior: arranca bajo la barra de navegación (76 px) con un borde superior nítido, y se difumina únicamente por el borde derecho (a partir del 68 % de su ancho) para no llegar de golpe al límite de la pantalla. El encuadre está centrado en los rostros. En móvil va debajo del texto, sin cambios. |
 
 ## Contenido de las diapositivas
 
