@@ -18,7 +18,7 @@ Todos los valores se muestrearon de los píxeles de las imágenes, no se estimar
 | Token | Hex | Uso en la landing |
 |---|---|---|
 | `--primary` | `#034DFC` | Fondo de botones ("Hablemos", "Descubrir más", "Contactar ahora"). Promedio de las tres muestras (`#0869FC`, `#0240FC`, `#003EFC`) |
-| `--primary-text` | `#0059FC` | Palabra "negocio", etiquetas de sección, enlace "Ver más proyectos", íconos de servicios |
+| `--primary-text` | `#003153` | Palabra "negocio", etiquetas de sección, enlace "Ver más proyectos", íconos de servicios |
 | `--primary-on-dark` | `#007BFF` | "al siguiente nivel?" sobre el fondo oscuro del CTA |
 | `--primary-soft` | `#DCE9FE` | Círculo detrás de los íconos de servicios |
 | `--cta-wedge` | `#073B8E` → `#0D4BA9` | Cuña diagonal del CTA |
@@ -46,7 +46,7 @@ La primera versión del CSS se había construido con la paleta de `look-and-feel
 |---|---|---|---|
 | Botones | `#74A2FF` (azul pálido) | `#034DFC` | La landing usa un azul vivo y saturado |
 | Texto del botón | negro | blanco | Blanco sobre `#034DFC` da 6.1:1 (cumple WCAG AA) |
-| Azul de texto y enlaces | `#2F62D9` | `#0059FC` | Medido en "negocio", etiquetas y enlaces (5.5:1 sobre blanco) |
+| Azul de texto y enlaces | `#2F62D9` | `#003153` | Texto y enlaces en azul oscuro (13.6:1 sobre blanco) |
 | Texto destacado sobre oscuro | `#74A2FF` | `#007BFF` | Medido en "al siguiente nivel?" |
 | Fondo de íconos | `#D3E2FF` | `#DCE9FE` | Medido en los círculos de servicios |
 | Texto principal | `#000103` | `#00000E` | Medido en titulares y cifras |

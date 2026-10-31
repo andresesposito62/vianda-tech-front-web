@@ -2,7 +2,7 @@
 :root {
   --primary: #034dfc;        /* botones (landing): blanco sobre este azul = 6.1:1 */
   --primary-on-dark: #007bff; /* texto destacado sobre fondos oscuros */
-  --primary-text: #0059fc;   /* texto, enlaces e íconos sobre claro: 5.5:1 */
+  --primary-text: #003153;   /* texto, enlaces e íconos sobre claro: 13.6:1 */
   --primary-soft: #dce9fe;
   --ink: #00000e;
   --muted: #414a65;
@@ -28,6 +28,7 @@ h1, h2, h3 { letter-spacing: -.025em; }
 /* Botones */
 .btn { display: inline-flex; align-items: center; gap: 6px; height: 38px; padding: 0 20px; border-radius: 99px; background: var(--primary); color: #fff; font-size: 14px; font-weight: 600; transition: filter .2s; }
 .btn:hover { filter: brightness(1.15); }
+.btn--deep { background: var(--primary-text); }
 .btn--nav { height: 30px; padding: 0 12px; font-size: 12px; gap: 5px; }
 
 /* Logo */
