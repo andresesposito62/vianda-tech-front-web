@@ -32,13 +32,14 @@ Implementación: `index.html` (`.hero__carousel`), `styles.css` (sección "Carru
 | # | Titular | Pantalla del portátil |
 |---|---|---|
 | 1 | Tecnología que impulsa tu **negocio** | Foto de dos personas con un portátil e íconos flotantes (`assets/hero-1.jpg`), en lugar del portátil |
-| 2 | Software hecho a la **medida** | Ícono de terminal |
-| 3 | Asesoría que cuida tu **inversión** | Ícono de burbuja de chat |
-| 4 | Tu negocio, en cada **móvil** | Ícono de teléfono |
-| 5 | Procesos que se automatizan con **IA** | Ícono de estrella de IA |
-| 6 | Sistemas que vuelven a **rendir** | Ícono de flechas circulares |
+| 2 | Páginas web que trabajan por **ti** | Ícono de código |
+| 3 | Software hecho a la **medida** | Ícono de terminal |
+| 4 | Asesoría que cuida tu **inversión** | Ícono de burbuja de chat |
+| 5 | Tu negocio, en cada **móvil** | Ícono de teléfono |
+| 6 | Procesos que se automatizan con **IA** | Ícono de estrella de IA |
+| 7 | Sistemas que vuelven a **rendir** | Ícono de flechas circulares |
 
-La palabra en negrita de cada titular usa `--accent`. Las seis diapositivas corresponden a las líneas de negocio de la spec 005: la 1 a Sitios Web Profesionales (con el mensaje de marca) y las demás, en orden, a Software a Medida, Asesoría Tecnológica, Aplicaciones Móviles, Automatización con IA y Renovación de Sistemas. Cada descripción reutiliza el texto de la tarjeta de la spec 005, abreviado cuando hace falta para respetar RF-14. Los textos son provisionales, pendientes de validar con el cliente. El resto de textos está en `index.html`.
+La palabra en negrita de cada titular usa `--accent`. La diapositiva 1 es el mensaje de marca y no se asocia a una línea de negocio. Las diapositivas 2 a 7 corresponden, en orden, a las líneas de la spec 005: Sitios Web Profesionales, Software a Medida, Asesoría Tecnológica, Aplicaciones Móviles, Automatización con IA y Renovación de Sistemas. Cada descripción reutiliza el texto de la tarjeta de la spec 005, abreviado cuando hace falta para respetar RF-14. Los textos son provisionales, pendientes de validar con el cliente. El resto de textos está en `index.html`.
 
 ## Accesibilidad
 
@@ -62,5 +63,5 @@ La palabra en negrita de cada titular usa `--accent`. Las seis diapositivas corr
 - **Imágenes.** Las pantallas del portátil usan íconos genéricos, a la espera de capturas o piezas reales de cada servicio.
 - **Pausa en móvil.** Sin botón de pausa, el usuario que no hace swipe no puede detener el avance automático, lo que cumple WCAG 2.2.2 solo en parte. Se aceptó por decisión de diseño y se mitiga con RF-13. En móvil, una vez detenido, no hay forma de reanudarlo salvo recargar la página.
 - **Navegación.** No hay flechas. En escritorio no se arrastra con el ratón, solo hay puntos y pausa.
-- **Enlaces.** Los seis botones "Descubrir más" apuntan a `#servicios`. Podrían enlazar a la sección de cada servicio.
+- **Enlaces.** Los siete botones "Descubrir más" apuntan a `#servicios`. Podrían enlazar a la sección de cada servicio.
 - **Pruebas.** Se verificó con capturas el avance de la diapositiva 1 a la 2, la presencia del botón de pausa y que los controles no aparecen a 900 px. El swipe se probó en Chrome de escritorio con eventos táctiles simulados: avanzar, saltar de la última a la primera, retroceder desde la primera y descartar un arrastre corto. Falta probarlo en un dispositivo real, y probar el clic en pausa y los puntos. No hay pruebas automatizadas.

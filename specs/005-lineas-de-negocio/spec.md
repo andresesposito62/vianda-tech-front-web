@@ -32,7 +32,7 @@ Implementación: `index.html` (`ul.services`) y `styles.css` (`.services`, `.car
 
 ## Relación con otras secciones
 
-- **Carrusel (spec 002).** Las seis diapositivas se alinearon con las líneas: la 1 es la de marca (Sitios Web Profesionales) y las otras cinco siguen el orden de la tabla, sin repetir la línea 3. Cada una usa el ícono de su tarjeta.
+- **Carrusel (spec 002).** Siete diapositivas: la 1 es el mensaje de marca (sin línea asociada) y las 2 a 7 siguen el orden de la tabla, con Sitios Web Profesionales primero. Cada una usa el ícono de su tarjeta.
 - **SEO (spec 004).** Las palabras clave "desarrollo de software" y "páginas web" corresponden a las líneas 1 y 3. "Páginas para tu negocio" y "innovación" no aparecen en las tarjetas, pero sí en la descripción de la página.
 - **Enlaces.** Las seis tarjetas apuntan a `#`, pendientes de tener una página o sección por línea (spec 004, RF-12).
 
