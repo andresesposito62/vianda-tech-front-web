@@ -115,7 +115,7 @@ h1, h2, h3 { letter-spacing: -.025em; }
 .cta h2 { font-size: 24.5px; line-height: 24px; font-weight: 700; letter-spacing: -.02em; }
 .cta em { color: var(--primary-on-dark); }
 .cta p { margin-left: 0; padding: 0 0 0 41px; max-width: 390px; height: 44px; display: flex; align-items: center; border-left: 1px solid rgba(255,255,255,.85); font-size: 13px; line-height: 19px; color: #c5cee0; }
-.cta .btn { margin-left: 63px; }
+.cta .btn { margin-left: 63px; background: var(--primary-soft); color: var(--primary-text); }
 
 /* Footer */
 .footer { width: min(var(--wide), 100% - 3rem); margin: 25px auto 0; padding-bottom: 14px; display: flex; flex-wrap: wrap; align-items: center; }
