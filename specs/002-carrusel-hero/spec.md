@@ -28,7 +28,7 @@ Implementación: `index.html` (`.hero__carousel`), `styles.css` (sección "Carru
 | RF-14 | La descripción de cada diapositiva (el texto bajo el titular) no debe superar **dos renglones** en ninguna pantalla. Si se cambia el texto, hay que comprobar que siga cumpliéndolo, sobre todo en móvil. |
 | RF-15 | Jerarquía y legibilidad: el CTA principal ("Descubrir más") es un botón relleno y único (no hay botón secundario). La barra superior lleva un degradado suave de fondo en escritorio para que el menú se lea sobre la foto. |
 | RF-16 | Entre 1001 y 1280 px la ilustración ocupa el 50 % del ancho (no el 56 %) para no solaparse con el titular. El portátil de las diapositivas 2 a 7 mide 340 × 208 px en escritorio y está apoyado sobre su base. |
-| RF-17 | En escritorio las imágenes de las diapositivas 1 a 4 no llegan al borde superior: arranca bajo la barra de navegación (76 px) con un borde superior nítido, y se difumina únicamente por el borde derecho (a partir del 68 % de su ancho) para no llegar de golpe al límite de la pantalla. El encuadre está centrado en los rostros. En móvil va debajo del texto, sin cambios. |
+| RF-17 | En escritorio las imágenes de las diapositivas 1 a 4 y 6 no llegan al borde superior: arranca bajo la barra de navegación (76 px) con un borde superior nítido, y se difumina únicamente por el borde derecho (a partir del 68 % de su ancho) para no llegar de golpe al límite de la pantalla. El encuadre está centrado en los rostros. En móvil va debajo del texto, sin cambios. |
 
 ## Contenido de las diapositivas
 
@@ -39,7 +39,7 @@ Implementación: `index.html` (`.hero__carousel`), `styles.css` (sección "Carru
 | 3 | Software hecho a la **medida** | Imagen de un cubo modular azul con un símbolo `</>` y paneles flotantes (engranaje, gráfico, equipo, verificación) (`assets/hero-3.jpg`, saturación al 72 % para ajustarla a la paleta), en lugar del portátil |
 | 4 | Asesoría que cuida tu **inversión** | Foto de dos personas con una interfaz holográfica de código (`assets/hero-4.jpg`, saturación al 72 % para ajustarla a la paleta), en lugar del portátil |
 | 5 | Tu negocio, en cada **móvil** | Ícono de teléfono |
-| 6 | Procesos que se automatizan con **IA** | Ícono de estrella de IA |
+| 6 | Procesos que se automatizan con **IA** | Banner de una ventana de código con un chip de IA y paneles flotantes (`assets/hero-6.jpg`, saturación al 65 % para ajustarlo a la paleta), en lugar del portátil |
 | 7 | Sistemas que vuelven a **rendir** | Ícono de flechas circulares |
 
 La palabra en negrita de cada titular usa `--accent`. La diapositiva 1 es el mensaje de marca y no se asocia a una línea de negocio. Las diapositivas 2 a 7 corresponden, en orden, a las líneas de la spec 005: Sitios Web Profesionales, Software a Medida, Asesoría Tecnológica, Aplicaciones Móviles, Automatización con IA y Renovación de Sistemas. Cada descripción reutiliza el texto de la tarjeta de la spec 005, abreviado cuando hace falta para respetar RF-14. Los textos son provisionales, pendientes de validar con el cliente. El resto de textos está en `index.html`.
