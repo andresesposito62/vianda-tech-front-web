@@ -4,7 +4,7 @@
 
 ## Resumen
 
-En móvil y tablet (1000 px o menos) la navegación principal se muestra en un menú hamburguesa en la barra superior. La fila de enlaces del pie de página (Servicios, Nosotros, Blog, Contacto) deja de mostrarse en esas pantallas, porque el menú la reemplaza. En escritorio no cambia nada.
+En móvil y tablet (1000 px o menos) la navegación principal se muestra en un menú hamburguesa que abre un cajón lateral. La fila de enlaces del pie de página (Servicios, Nosotros, Blog, Contacto) deja de mostrarse en esas pantallas, porque el menú la reemplaza. En escritorio no cambia nada.
 
 Implementación: `index.html` (`.burger`, `#menu`), `styles.css` (secciones "Menú hamburguesa" y "Responsive") y `script.js` (bloque "Menú hamburguesa").
 
@@ -13,10 +13,10 @@ Implementación: `index.html` (`.burger`, `#menu`), `styles.css` (secciones "Men
 | ID | Requerimiento |
 |---|---|
 | RF-01 | En 1000 px o menos, la barra superior muestra un botón de hamburguesa (tres rayas) a la derecha del botón "Hablemos". En escritorio el botón está oculto. |
-| RF-02 | Al pulsar el botón se abre un panel desplegable bajo la barra, con los enlaces Servicios, Nosotros, Blog y Contacto. Al pulsarlo de nuevo se cierra. |
-| RF-03 | El panel se cierra al elegir un enlace y al pulsar la tecla Escape. |
-| RF-04 | Con el panel abierto, las tres rayas se convierten en una X. |
-| RF-05 | En el menú móvil, "Servicios" es un enlace simple a `#servicios`. No muestra la flecha ni el submenú de escritorio (las seis líneas de negocio de la spec 005). |
+| RF-02 | Al pulsar el botón se abre un **cajón lateral** que entra desde la derecha (86 % del ancho, máximo 360 px) y ocupa todo el alto de la pantalla, con un fondo oscuro detrás. Contiene: Servicios (con las seis líneas de negocio de la spec 005 debajo, siempre visibles), Nosotros, Blog y Contacto, y al pie un botón "Hablemos" a ancho completo, el teléfono y el correo. |
+| RF-03 | El cajón se cierra al elegir un enlace, al tocar el fondo oscuro, al pulsar el botón de nuevo y con la tecla Escape (que devuelve el foco al botón). Mientras está abierto, la página de fondo no se desplaza. |
+| RF-04 | Con el cajón abierto, las tres rayas se convierten en una X. |
+| RF-05 | "Servicios" es un enlace a `#servicios` y las seis líneas aparecen como sublista con tipografía menor, sin acordeón ni flecha. |
 | RF-06 | En 1000 px o menos, la fila de enlaces del pie de página no se muestra. El pie conserva logotipo, redes sociales y aviso de derechos. |
 | RF-07 | El enlace "Blog" (`#blog`) sigue llevando al final de la página en móvil. Su ancla está en el bloque de redes sociales del pie y no en el enlace del pie. |
 
@@ -24,14 +24,13 @@ Implementación: `index.html` (`.burger`, `#menu`), `styles.css` (secciones "Men
 
 | Requisito | Detalle |
 |---|---|
-| Teclado | El botón es un `button` nativo; Escape cierra el panel. |
+| Teclado | El botón es un `button` nativo. Al abrir, el foco pasa al primer enlace; Escape cierra y devuelve el foco al botón. Con el cajón cerrado, sus enlaces son `inert` (no reciben foco ni se leen) en móvil. |
 | Lectores de pantalla | El botón tiene `aria-label` ("Abrir menú" / "Cerrar menú"), `aria-expanded` y `aria-controls="menu"`. |
-| Objetivo táctil | El botón mide 44 × 44 px y cada enlace del panel tiene unos 46 px de alto. |
+| Objetivo táctil | El botón mide 44 × 44 px; los enlaces principales del cajón, 52 px de alto, y los de las líneas de negocio, 44 px. |
 | Contraste | Los enlaces usan los colores de la spec 001. |
 
 ## Puntos abiertos
 
-- **Submenú de servicios.** En móvil se omite. Podría añadirse como lista anidada si se quiere enlazar cada servicio por separado.
-- **Cierre al tocar fuera.** El panel no se cierra al tocar fuera de él, solo con el botón, un enlace o Escape.
-- **Foco.** Al abrir el panel el foco no se mueve a él ni se atrapa dentro.
+
+- **Foco.** El foco no queda atrapado dentro del cajón mientras está abierto; el fondo oscuro lo tapa al ratón y al tacto, pero con teclado se puede salir con Tab.
 - **Pruebas.** No se ha verificado en navegador ni en dispositivo real. No hay pruebas automatizadas.

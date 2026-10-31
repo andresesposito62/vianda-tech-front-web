@@ -154,17 +154,29 @@
   start();
 })();
 
-// Menú hamburguesa (móvil): abre/cierra el panel de enlaces; se cierra al elegir uno o con Escape.
+// Menú hamburguesa (móvil): cajón lateral. Se cierra al elegir un enlace, al tocar el fondo o con Escape; bloquea el scroll de la página mientras está abierto.
 (() => {
   const burger = document.querySelector('.burger');
   const menu = document.getElementById('menu');
+  const backdrop = document.querySelector('.nav__backdrop');
   if (!burger || !menu) return;
-  const set = (open) => {
+  const mobile = matchMedia('(max-width: 1000px)');
+  const isOpen = () => menu.classList.contains('is-open');
+  // Cerrado en móvil: sus enlaces no deben recibir foco ni leerse (están fuera de pantalla).
+  const sync = () => { menu.inert = mobile.matches && !isOpen(); };
+  const set = (open, restoreFocus = false) => {
     menu.classList.toggle('is-open', open);
+    document.body.classList.toggle('menu-open', open);
     burger.setAttribute('aria-expanded', String(open));
     burger.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+    sync();
+    if (open) menu.querySelector('a')?.focus();
+    else if (restoreFocus) burger.focus();
   };
-  burger.addEventListener('click', () => set(!menu.classList.contains('is-open')));
+  burger.addEventListener('click', () => set(!isOpen()));
+  backdrop?.addEventListener('click', () => set(false));
   menu.addEventListener('click', (e) => { if (e.target.closest('a')) set(false); });
-  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') set(false); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && isOpen()) set(false, true); });
+  mobile.addEventListener('change', () => { if (!mobile.matches) set(false); else sync(); });
+  sync();
 })();

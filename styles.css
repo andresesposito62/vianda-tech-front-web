@@ -137,6 +137,7 @@ h1, h2, h3 { letter-spacing: -.025em; }
 
 /* Menú hamburguesa (solo móvil) */
 .burger { display: none; }
+.nav__cta, .nav__contact, .nav__backdrop { display: none; }
 
 /* Responsive */
 @media (max-width: 1000px) {
@@ -147,11 +148,26 @@ h1, h2, h3 { letter-spacing: -.025em; }
   .burger[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
   .burger[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
   .burger[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-  .nav__links { display: none; position: absolute; top: 100%; left: 1.5rem; right: 1.5rem; margin: 0; flex-direction: column; gap: 0; padding: 8px; background: #fff; border: 1px solid var(--line); border-radius: 12px; box-shadow: 0 12px 30px rgba(0,0,14,.1); font-size: 16px; }
-  .nav__links.is-open { display: flex; }
-  .nav__links a { padding: 13px 12px; border-radius: 8px; }
-  .nav__links a:hover { background: var(--primary-soft); }
-  .nav__links .chev, .nav__links .submenu { display: none; }
+  /* Menú móvil: cajón lateral a pantalla completa de alto, con fondo oscuro, objetivos táctiles de 52 px y llamada a la acción abajo */
+  .nav { z-index: 30; }
+  .burger { position: relative; z-index: 2; }
+  .nav__backdrop { display: block; position: fixed; inset: 0; z-index: 0; background: rgba(0,14,30,.45); opacity: 0; pointer-events: none; transition: opacity .25s; }
+  .nav__links { position: fixed; z-index: 1; top: 0; right: 0; bottom: 0; width: min(86vw, 360px); margin: 0; padding: 84px 20px 24px; flex-direction: column; align-items: stretch; gap: 0; overflow-y: auto; overscroll-behavior: contain; background: #fff; box-shadow: -12px 0 30px rgba(0,0,14,.12); font-size: 18px; font-weight: 600; visibility: hidden; transform: translateX(100%); transition: transform .3s cubic-bezier(.2,.7,.2,1), visibility 0s .3s; }
+  .nav__links.is-open { visibility: visible; transform: none; transition: transform .3s cubic-bezier(.2,.7,.2,1), visibility 0s; }
+  .nav__links.is-open ~ .nav__backdrop { opacity: 1; pointer-events: auto; }
+  .nav__links > li { border-bottom: 1px solid var(--line); }
+  .nav__links a { min-height: 52px; padding: 0 4px; border-radius: 0; }
+  .nav__links a:hover { background: none; color: var(--primary-text); }
+  .nav__links .chev { display: none; }
+  .nav__links .has-menu > a { min-height: 48px; }
+  .nav__links .submenu { display: block; position: static; min-width: 0; padding: 0 0 10px 12px; margin: 0; border: 0; border-radius: 0; box-shadow: none; background: none; }
+  .nav__links .submenu a { min-height: 44px; padding: 0 4px; font-size: 15px; font-weight: 500; color: var(--muted); }
+  .nav__links .nav__cta, .nav__links .nav__contact { display: block; border-bottom: 0; }
+  .nav__links .nav__cta { margin-top: auto; padding-top: 24px; }
+  .nav__links .nav__cta .btn { width: 100%; justify-content: center; height: 52px; font-size: 16px; color: #fff; }
+  .nav__links .nav__contact { padding-top: 12px; font-size: 14px; font-weight: 500; text-align: center; color: var(--muted); }
+  .nav__links .nav__contact a { display: flex; justify-content: center; align-items: center; min-height: 44px; }
+  body.menu-open { overflow: hidden; }
   .footer nav { display: none; }
   /* Barra superior: fondo blanco que se difumina hacia abajo, sin borde ni corte con el carrusel */
   .nav { height: 76px; background: linear-gradient(180deg, rgba(255,255,255,.95) 0%, rgba(255,255,255,.8) 45%, rgba(255,255,255,.35) 80%, rgba(255,255,255,0) 100%); }
