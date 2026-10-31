@@ -28,7 +28,7 @@ Todos los valores se muestrearon de los píxeles de las imágenes, no se estimar
 
 | Token | Hex | Uso en la landing |
 |---|---|---|
-| `--ink` | `#00000E` | Titulares, "Proyectos" activo del footer, cifras |
+| `--ink` | `#00000E` | Titulares, cifras |
 | `--muted` | `#414A65` | Descripciones, enlaces del footer (`#424D68`), etiquetas de cifras (`#3E4361`) |
 | `--dark` | `#0A1322` | Fondo del banner CTA |
 | `--hero` | `#F0F5FD` | Fondo del hero, tono azulado muy claro |
@@ -101,7 +101,7 @@ Escritorio queda como en la referencia. En móvil se ajustan las medidas según 
 | Texto mínimo | 14 px en cuerpo y tarjetas, 12 px en el copyright |
 | Objetivos táctiles | 44 px de alto (botones, íconos sociales, enlaces del pie) |
 | Tarjetas de servicio | Horizontales: ícono de 44 px a la izquierda y texto a la derecha, en lugar de tarjetas de 138 px de alto |
-| Proyectos | La sección se eliminó: se fusionó con "Nuestros servicios", que conserva el diseño original de tarjetas. El ancla `#proyectos` apunta a esa sección |
+| Proyectos | La sección se eliminó: se fusionó con "Nuestros servicios", que conserva el diseño original de tarjetas. También se quitó "Proyectos" del menú y del pie, y el ancla `#proyectos` ya no existe |
 | Cifras | Cuadrícula de 2 columnas sin divisores |
 | Pie de página | Logotipo de 44 px, copyright centrado |
 

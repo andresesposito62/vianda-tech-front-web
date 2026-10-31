@@ -33,7 +33,7 @@ Implementación: `index.html` (`<head>` y estructura), archivos de raíz (`robot
 | RF-07 | Existen `robots.txt` (con la ruta del sitemap) y `sitemap.xml`. Se actualizan al añadir páginas. |
 | RF-08 | Las imágenes con contenido llevan `alt` descriptivo; las decorativas llevan `alt=""` o `aria-hidden`. Todas declaran `width` y `height`. Las que no están en la primera pantalla usan `loading="lazy"`. |
 | RF-09 | Los enlaces usan texto descriptivo (no "clic aquí") y apuntan a destinos reales. Los `href="#"` provisionales se sustituyen antes de publicar. |
-| RF-10 | Las URL son cortas, en minúsculas y sin acentos, con guiones. Los anclajes de sección (`#servicios`, `#proyectos`, `#contacto`) tienen un `id` estable. |
+| RF-10 | Las URL son cortas, en minúsculas y sin acentos, con guiones. Los anclajes de sección (`#servicios`, `#contacto`) tienen un `id` estable. |
 | RF-11 | Hay favicon y `theme-color`. |
 | RF-12 | Cuando el sitio crezca (blog, páginas de servicio), cada servicio tiene su propia página con su `h1`, `title` y `description`, en lugar de vivir solo como sección de la portada. |
 
