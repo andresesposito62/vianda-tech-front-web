@@ -90,6 +90,21 @@ Muestras de `look-and-feel.jpg`, que no se usan en el sitio salvo como inspiraci
 | `#DEDEDE`, `#AAAAAA` | Pestañas inactivas |
 | `#4B4B4B` | Texto secundario |
 
+## Proporciones en móvil (1000 px o menos)
+
+Escritorio queda como en la referencia. En móvil se ajustan las medidas según prácticas habituales de UI:
+
+| Aspecto | Valor |
+|---|---|
+| Márgenes laterales | 24 px |
+| Separación entre secciones | 32 a 40 px |
+| Texto mínimo | 14 px en cuerpo y tarjetas, 12 px en el copyright |
+| Objetivos táctiles | 44 px de alto (botones, íconos sociales, enlaces del pie) |
+| Tarjetas de servicio | Horizontales: ícono de 44 px a la izquierda y texto a la derecha, en lugar de tarjetas de 138 px de alto |
+| Proyectos | Tira horizontal con scroll-snap; cada tarjeta ocupa el 78 % del ancho (16:10), así se ve parte de la siguiente |
+| Cifras | Cuadrícula de 2 columnas sin divisores |
+| Pie de página | Logotipo de 44 px, copyright centrado |
+
 ## Puntos abiertos
 
 - **Estimaciones.** `--muted` y `--ink` salen de los píxeles más oscuros de texto fino, que no siempre alcanza el color real del texto. Conviene validarlos con el diseñador.
