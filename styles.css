@@ -69,8 +69,6 @@ h1, h2, h3 { letter-spacing: -.025em; }
 .hero p { max-width: 405px; margin: 14px 0 24px; font-size: 15.5px; line-height: 20px; color: var(--muted); }
 .hero__actions { display: flex; align-items: center; gap: 22px; }
 .hero__actions .btn { padding: 0 20px; }
-.play { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 500; }
-.play__dot { display: grid; place-items: center; width: 36px; height: 36px; border-radius: 50%; background: #fff; border: 1px solid var(--line); box-shadow: 0 2px 8px rgba(0,0,14,.08); }
 
 /* Escena del hero (marcador de posición: sustituir por la foto real) */
 .hero__visual { position: absolute; z-index: 1; top: 0; bottom: 0; right: 0; width: 56%; -webkit-mask-image: linear-gradient(90deg, transparent, #000 30%); mask-image: linear-gradient(90deg, transparent, #000 30%); }
@@ -168,7 +166,7 @@ h1, h2, h3 { letter-spacing: -.025em; }
   .hero__body { padding-top: 16px; }
   .hero h1, .hero h2 { font-size: clamp(30px, 8.6vw, 42px); line-height: 1.08; }
   .hero p { margin: 12px 0 20px; font-size: 15px; line-height: 22px; }
-  .hero__actions { gap: 16px; }
+
   .hero__device { position: relative; top: auto; bottom: auto; right: auto; width: 100%; height: 300px; margin-top: 16px; -webkit-mask-image: none; mask-image: none; }
   .hero__visual { top: auto; width: 100%; height: 300px; -webkit-mask-image: none; mask-image: none; }
   .desk { height: 48px; }

@@ -12,7 +12,7 @@ Implementación: `index.html` (`.hero__carousel`), `styles.css` (sección "Carru
 
 | ID | Requerimiento |
 |---|---|
-| RF-01 | El hero muestra una diapositiva a la vez. Cada una contiene titular, descripción, botones "Descubrir más" y "Ver proyectos", y un portátil con su pantalla. |
+| RF-01 | El hero muestra una diapositiva a la vez. Cada una contiene titular, descripción, un único botón "Descubrir más" (a `#servicios`) y un portátil con su pantalla. |
 | RF-02 | El texto y el portátil de una diapositiva se desplazan juntos hacia la izquierda. La siguiente diapositiva entra desde la derecha. |
 | RF-03 | El fondo del hero (escena y escritorio) permanece fijo durante el desplazamiento. |
 | RF-04 | El carrusel avanza solo cada **6 segundos**. La animación de desplazamiento dura **700 ms**. |
@@ -26,7 +26,7 @@ Implementación: `index.html` (`.hero__carousel`), `styles.css` (sección "Carru
 | RF-12 | Un swipe vertical sigue desplazando la página con normalidad, y un arrastre no activa los botones ni enlaces que haya debajo del dedo. Mientras el dedo está sobre el carrusel, el avance automático se detiene. |
 | RF-13 | Tras el primer swipe, el avance automático se detiene y no se reanuda solo (en escritorio táctil, el botón de pausa pasa a "reanudar"). Un simple toque sin arrastre no cuenta como swipe. |
 | RF-14 | La descripción de cada diapositiva (el texto bajo el titular) no debe superar **dos renglones** en ninguna pantalla. Si se cambia el texto, hay que comprobar que siga cumpliéndolo, sobre todo en móvil. |
-| RF-15 | Jerarquía y legibilidad: el CTA principal ("Descubrir más") es un botón relleno y el secundario es un enlace de **14 px como mínimo**. La barra superior lleva un degradado suave de fondo en escritorio para que el menú se lea sobre la foto. || RF-16 | Entre 1001 y 1280 px la ilustración ocupa el 50 % del ancho (no el 56 %) para no solaparse con el titular. El portátil de las diapositivas 2 a 7 mide 340 × 208 px en escritorio y está apoyado sobre su base. |
+| RF-15 | Jerarquía y legibilidad: el CTA principal ("Descubrir más") es un botón relleno y único (no hay botón secundario).  La barra superior lleva un degradado suave de fondo en escritorio para que el menú se lea sobre la foto. || RF-16 | Entre 1001 y 1280 px la ilustración ocupa el 50 % del ancho (no el 56 %) para no solaparse con el titular. El portátil de las diapositivas 2 a 7 mide 340 × 208 px en escritorio y está apoyado sobre su base. |
 
 ## Contenido de las diapositivas
 
@@ -64,5 +64,5 @@ La palabra en negrita de cada titular usa `--accent`. La diapositiva 1 es el men
 - **Imágenes.** Las pantallas del portátil usan íconos genéricos, a la espera de capturas o piezas reales de cada servicio.
 - **Pausa en móvil.** Sin botón de pausa, el usuario que no hace swipe no puede detener el avance automático, lo que cumple WCAG 2.2.2 solo en parte. Se aceptó por decisión de diseño y se mitiga con RF-13. En móvil, una vez detenido, no hay forma de reanudarlo salvo recargar la página.
 - **Navegación.** No hay flechas. En escritorio no se arrastra con el ratón, solo hay puntos y pausa.
-- **Enlaces.** Los siete botones "Descubrir más" apuntan a `#servicios`. Podrían enlazar a la sección de cada servicio.
+- **Enlaces.** Los siete botones "Descubrir más" apuntan a `#servicios`. Podrían enlazar a la sección de cada línea de negocio. Se quitó el botón secundario ("Ver proyectos" y luego "Contáctanos"); el contacto queda en el menú, en "Hablemos" y en la sección final.
 - **Pruebas.** Se verificó con capturas el avance de la diapositiva 1 a la 2, la presencia del botón de pausa y que los controles no aparecen a 900 px. El swipe se probó en Chrome de escritorio con eventos táctiles simulados: avanzar, saltar de la última a la primera, retroceder desde la primera y descartar un arrastre corto. Falta probarlo en un dispositivo real, y probar el clic en pausa y los puntos. No hay pruebas automatizadas.
