@@ -110,7 +110,7 @@ h1, h2, h3 { letter-spacing: -.025em; }
 .cta { position: relative; overflow: hidden; width: min(var(--wide), 100% - 3rem); height: 90px; margin: 19px auto 0; border-radius: 14px; color: #fff; background: var(--dark);
   padding-inline: clamp(1.5rem, 8.5vw, 142px) clamp(1.5rem, 18vw, 305px);
   display: grid; grid-template-columns: 403px 1fr auto; align-items: center; }
-.cta::after { content: ""; position: absolute; right: 0; top: 0; bottom: 0; width: 240px; background: linear-gradient(135deg, rgba(7,59,142,0) 0%, #073b8e 50%, #0d4ba9 100%); clip-path: polygon(70% 100%, 100% 0, 100% 100%); }
+.cta::after { content: ""; position: absolute; right: -90px; top: -45px; bottom: -45px; width: 320px; border-radius: 50%; background: radial-gradient(circle at 70% 50%, rgba(65,74,101,.85) 0%, rgba(65,74,101,.35) 55%, rgba(65,74,101,0) 100%); }
 .cta > * { position: relative; z-index: 1; }
 .cta h2 { font-size: 24.5px; line-height: 24px; font-weight: 700; letter-spacing: -.02em; }
 .cta em { color: var(--primary-soft); }
