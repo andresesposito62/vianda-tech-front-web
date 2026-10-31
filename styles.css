@@ -113,7 +113,7 @@ h1, h2, h3 { letter-spacing: -.025em; }
 .cta::after { content: ""; position: absolute; right: 0; top: 0; bottom: 0; width: 240px; background: linear-gradient(135deg, rgba(7,59,142,0) 0%, #073b8e 50%, #0d4ba9 100%); clip-path: polygon(70% 100%, 100% 0, 100% 100%); }
 .cta > * { position: relative; z-index: 1; }
 .cta h2 { font-size: 24.5px; line-height: 24px; font-weight: 700; letter-spacing: -.02em; }
-.cta em { color: var(--primary-on-dark); }
+.cta em { color: var(--primary-soft); }
 .cta p { margin-left: 0; padding: 0 0 0 41px; max-width: 390px; height: 44px; display: flex; align-items: center; border-left: 1px solid rgba(255,255,255,.85); font-size: 13px; line-height: 19px; color: #c5cee0; }
 .cta .btn { margin-left: 63px; background: var(--primary-soft); color: var(--primary-text); }
 
