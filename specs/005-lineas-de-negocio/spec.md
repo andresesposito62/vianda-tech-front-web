@@ -38,7 +38,7 @@ Implementación: `index.html` (`ul.services`) y `styles.css` (`.services`, `.car
 
 ## Puntos abiertos
 
-- **Integraciones.** ✅ Resuelto: no es una línea de negocio y no se ofrece como servicio independiente. Consecuencias pendientes: la diapositiva 4 del carrusel ("Tus herramientas, todas conectadas"), el submenú "Servicios" del menú de escritorio (lista "Integraciones") y el ícono `i-puzzle`, que ya no corresponde a ningún servicio.
+- **Integraciones.** ✅ Resuelto: no es una línea de negocio y no se ofrece como servicio independiente. Consecuencias resueltas: la diapositiva sobre integraciones se reemplazó, el submenú "Servicios" del menú de escritorio lista las seis líneas y se eliminó el ícono `i-puzzle`.
 - **Carrusel.** ✅ Resuelto: las diapositivas coinciden con las líneas de negocio.
 - **Páginas por línea.** Cada línea merece su propia página con `h1`, `title` y `description` para SEO.
 - **Íconos del carrusel.** ✅ Resuelto: usan los mismos que las tarjetas. `i-puzzle` ya no se usa en ningún lado y se puede eliminar.
