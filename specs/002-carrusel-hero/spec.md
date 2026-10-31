@@ -36,7 +36,7 @@ Implementación: `index.html` (`.hero__carousel`), `styles.css` (sección "Carru
 |---|---|---|
 | 1 | Tecnología que impulsa tu **negocio** | Foto de dos personas con un portátil e íconos flotantes (`assets/hero-1.jpg`), en lugar del portátil |
 | 2 | Páginas web que trabajan por **ti** | Foto de un portátil mostrando un sitio web de Vianda Tech sobre un escritorio (`assets/hero-2.jpg`), en lugar del portátil |
-| 3 | Software hecho a la **medida** | Foto de una desarrolladora con un portátil e interfaces de código flotantes en una oficina moderna (`assets/hero-3.jpg`, saturación al 72 % para ajustarla a la paleta), en lugar del portátil |
+| 3 | Software hecho a la **medida** | Foto de una desarrolladora con un portátil e interfaces de código flotantes en una oficina moderna (`assets/hero-3.jpg`, saturación al 72 %, y la piel ajustada al tono de la mujer de la diapositiva 5), en lugar del portátil |
 | 4 | Asesoría que cuida tu **inversión** | Foto de dos personas con una interfaz holográfica de código (`assets/hero-4.jpg`, saturación al 72 % para ajustarla a la paleta), en lugar del portátil |
 | 5 | Tu negocio, en cada **móvil** | Foto de una mujer usando el móvil con íconos de compra flotantes en una oficina (`assets/hero-5.jpg`, saturación al 62 % para ajustarla a la paleta), en lugar del portátil |
 | 6 | Procesos que se automatizan con **IA** | Banner de una ventana de código con un chip de IA y paneles flotantes (`assets/hero-6.jpg`, saturación al 65 % para ajustarlo a la paleta), en lugar del portátil |
