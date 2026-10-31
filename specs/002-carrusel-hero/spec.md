@@ -25,6 +25,7 @@ Implementación: `index.html` (`.hero__carousel`), `styles.css` (sección "Carru
 | RF-11 | El swipe es horizontal: la diapositiva sigue al dedo y, al soltar, avanza a la siguiente (deslizar a la izquierda) o vuelve a la anterior (a la derecha) si el arrastre supera el 15 % del ancho. Si es menor, regresa a su sitio. El swipe también funciona en el bucle: hacia atrás desde la primera se llega a la última. |
 | RF-12 | Un swipe vertical sigue desplazando la página con normalidad, y un arrastre no activa los botones ni enlaces que haya debajo del dedo. Mientras el dedo está sobre el carrusel, el avance automático se detiene. |
 | RF-13 | Tras el primer swipe, el avance automático se detiene y no se reanuda solo (en escritorio táctil, el botón de pausa pasa a "reanudar"). Un simple toque sin arrastre no cuenta como swipe. |
+| RF-14 | La descripción de cada diapositiva (el texto bajo el titular) no debe superar **dos renglones** en ninguna pantalla. Si se cambia el texto, hay que comprobar que siga cumpliéndolo, sobre todo en móvil. |
 
 ## Contenido de las diapositivas
 
