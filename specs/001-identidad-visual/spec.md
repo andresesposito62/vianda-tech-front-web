@@ -18,7 +18,8 @@ Todos los valores se muestrearon de los píxeles de las imágenes, no se estimar
 | Token | Hex | Uso en la landing |
 |---|---|---|
 | `--primary` | `#034DFC` | Fondo de botones ("Hablemos", "Descubrir más", "Contactar ahora"). Promedio de las tres muestras (`#0869FC`, `#0240FC`, `#003EFC`) |
-| `--primary-text` | `#003153` | Palabra "negocio", etiquetas de sección, enlace "Ver más proyectos", íconos de servicios |
+| `--primary-text` | `#003153` | Enlace "Ver más proyectos", íconos de servicios, botones "Hablemos" y "Descubrir más" |
+| `--accent` | `#165A7A` | Palabra "negocio" del titular. Azul petróleo, ~7:1 sobre el fondo del hero |
 | `--primary-on-dark` | `#007BFF` | "al siguiente nivel?" sobre el fondo oscuro del CTA |
 | `--primary-soft` | `#DCE9FE` | Círculo detrás de los íconos de servicios |
 | `--cta-wedge` | `#073B8E` → `#0D4BA9` | Cuña diagonal del CTA |
@@ -71,7 +72,8 @@ La primera versión del CSS se había construido con la paleta de `look-and-feel
 | Combinación | Ratio | Resultado |
 |---|---|---|
 | Blanco sobre `--primary` | 6.1:1 | Cumple AA |
-| `--primary-text` sobre blanco | 5.5:1 | Cumple AA |
+| `--primary-text` sobre blanco | 13.6:1 | Cumple AAA |
+| `--accent` sobre `--hero` | ~7:1 | Cumple AAA |
 | `--muted` sobre blanco | ~9:1 | Cumple AAA |
 | `--primary-on-dark` sobre `--dark` | ~5:1 | Cumple AA |
 

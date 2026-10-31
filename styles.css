@@ -4,6 +4,7 @@
   --primary-on-dark: #007bff; /* texto destacado sobre fondos oscuros */
   --primary-text: #003153;   /* texto, enlaces e íconos sobre claro: 13.6:1 */
   --primary-soft: #dce9fe;
+  --accent: #165a7a;         /* palabra destacada del titular: ~7:1 sobre el hero */
   --ink: #00000e;
   --muted: #414a65;
   --panel: #f6f7fb;
@@ -48,6 +49,7 @@ h1, h2, h3 { letter-spacing: -.025em; }
 .submenu a:hover { background: var(--primary-soft); color: var(--primary-text); }
 
 .hero__body { position: relative; z-index: 3; padding-top: 40px; }
+.hero h1 em { color: var(--accent); }
 .hero h1 { font-size: 54px; line-height: 52px; font-weight: 700; letter-spacing: -.035em; }
 .hero p { max-width: 405px; margin: 14px 0 24px; font-size: 15.5px; line-height: 20px; color: var(--muted); }
 .hero__actions { display: flex; align-items: center; gap: 22px; }
