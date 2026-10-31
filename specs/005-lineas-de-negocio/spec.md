@@ -32,14 +32,14 @@ Implementación: `index.html` (`ul.services`) y `styles.css` (`.services`, `.car
 
 ## Relación con otras secciones
 
-- **Carrusel (spec 002).** Las diapositivas 2 a 4 ("Páginas web que trabajan por ti", "Procesos que se automatizan con IA", "Tus herramientas, todas conectadas") se redactaron antes de estas líneas. Coinciden con las líneas 3 y 5, pero la 4 habla de integraciones, que no es una línea de negocio (decidido). Falta alinear el carrusel con esta lista.
+- **Carrusel (spec 002).** Las seis diapositivas se alinearon con las líneas: la 1 es la de marca (Sitios Web Profesionales) y las otras cinco siguen el orden de la tabla, sin repetir la línea 3. Cada una usa el ícono de su tarjeta.
 - **SEO (spec 004).** Las palabras clave "desarrollo de software" y "páginas web" corresponden a las líneas 1 y 3. "Páginas para tu negocio" y "innovación" no aparecen en las tarjetas, pero sí en la descripción de la página.
 - **Enlaces.** Las seis tarjetas apuntan a `#`, pendientes de tener una página o sección por línea (spec 004, RF-12).
 
 ## Puntos abiertos
 
 - **Integraciones.** ✅ Resuelto: no es una línea de negocio y no se ofrece como servicio independiente. Consecuencias pendientes: la diapositiva 4 del carrusel ("Tus herramientas, todas conectadas"), el submenú "Servicios" del menú de escritorio (lista "Integraciones") y el ícono `i-puzzle`, que ya no corresponde a ningún servicio.
-- **Carrusel.** Alinear los titulares y textos de las diapositivas 2 a 4 con las líneas de negocio.
+- **Carrusel.** ✅ Resuelto: las diapositivas coinciden con las líneas de negocio.
 - **Páginas por línea.** Cada línea merece su propia página con `h1`, `title` y `description` para SEO.
-- **Íconos del carrusel.** Las diapositivas 2 a 4 usan los íconos `i-code`, `i-cpu` e `i-puzzle`. El último ya no corresponde a ninguna tarjeta.
+- **Íconos del carrusel.** ✅ Resuelto: usan los mismos que las tarjetas. `i-puzzle` ya no se usa en ningún lado y se puede eliminar.
 - **Textos.** Aprobados por el cliente el 2026-10-31 en la conversación de diseño; no hay versión validada con terceros.
