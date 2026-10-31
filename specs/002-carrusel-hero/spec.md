@@ -14,7 +14,7 @@ Implementación: `index.html` (`.hero__carousel`), `styles.css` (sección "Carru
 |---|---|
 | RF-01 | El hero muestra una diapositiva a la vez. Cada una contiene titular, descripción, botones "Descubrir más" y "Ver proyectos", y un portátil con su pantalla. |
 | RF-02 | El texto y el portátil de una diapositiva se desplazan juntos hacia la izquierda. La siguiente diapositiva entra desde la derecha. |
-| RF-03 | El fondo del hero (escena, escritorio y planta) permanece fijo durante el desplazamiento. |
+| RF-03 | El fondo del hero (escena y escritorio) permanece fijo durante el desplazamiento. |
 | RF-04 | El carrusel avanza solo cada **6 segundos**. La animación de desplazamiento dura **700 ms**. |
 | RF-05 | El carrusel es un bucle continuo. Tras la última diapositiva se vuelve a la primera avanzando en el mismo sentido, sin rebobinar. |
 | RF-06 | En escritorio hay un indicador de puntos, uno por diapositiva, que marca la activa. Al pulsar un punto se salta a esa diapositiva y se reinicia el temporizador. En móvil los puntos están ocultos (RF-10). |

@@ -86,7 +86,6 @@ h1, h2, h3 { letter-spacing: -.025em; }
 .laptop__icon { color: #7fb0ff; filter: drop-shadow(0 0 14px rgba(40,110,255,.9)); }
 .laptop img { width: 84px; height: auto; filter: drop-shadow(0 0 14px rgba(40,110,255,.9)) brightness(1.15); }
 .laptop-base { position: absolute; left: 0; bottom: 38px; width: 62%; height: 22px; background: linear-gradient(180deg, #e8edf5, #aab7cc); border-radius: 0 0 40px 4px; transform: skewX(-38deg) translateX(40px); box-shadow: 0 10px 20px rgba(10,25,60,.25); }
-.plant { position: absolute; right: -2%; bottom: 20px; width: 160px; height: 270px; border-radius: 50%; background: radial-gradient(ellipse at 50% 35%, rgba(70,100,80,.55), rgba(70,100,80,0) 70%); filter: blur(6px); }
 
 /* Filas con intro a la izquierda */
 .row { display: grid; grid-template-columns: 299px 1fr; align-items: start; }
