@@ -18,7 +18,7 @@ Todos los valores se muestrearon de los píxeles de las imágenes, no se estimar
 | Token | Hex | Uso en la landing |
 |---|---|---|
 | `--primary` | `#034DFC` | Fondo de botones ("Hablemos", "Descubrir más", "Contactar ahora"). Promedio de las tres muestras (`#0869FC`, `#0240FC`, `#003EFC`) |
-| `--primary-text` | `#003153` | Enlace "Ver más proyectos", íconos de servicios, botones "Hablemos" y "Descubrir más" |
+| `--primary-text` | `#003153` | Botones "Hablemos" y "Descubrir más" |
 | `--accent` | `#165A7A` | Palabra "negocio" del titular. Azul petróleo, ~7:1 sobre el fondo del hero |
 | `--primary-on-dark` | `#007BFF` | "al siguiente nivel?" sobre el fondo oscuro del CTA |
 | `--primary-soft` | `#DCE9FE` | Círculo detrás de los íconos de servicios |
@@ -32,7 +32,7 @@ Todos los valores se muestrearon de los píxeles de las imágenes, no se estimar
 | `--muted` | `#414A65` | Descripciones, enlaces del footer (`#424D68`), etiquetas de cifras (`#3E4361`) |
 | `--dark` | `#0A1322` | Fondo del banner CTA |
 | `--hero` | `#F0F5FD` | Fondo del hero, tono azulado muy claro |
-| `--panel` | `#F6F7FB` | Fondo de las tarjetas de servicio |
+| `--panel` | `#F6F7FB` | Sin uso en las tarjetas de servicio, que ahora llevan degradado |
 | `--surface` | `#F3F5FA` | Franja de cifras |
 | `--line` | `#E3E6EE` | Divisor vertical de la sección de servicios |
 | `--line-strong` | `#D1D7E1` | Separadores de la franja de cifras |
@@ -100,8 +100,8 @@ Escritorio queda como en la referencia. En móvil se ajustan las medidas según 
 | Separación entre secciones | 32 a 40 px |
 | Texto mínimo | 14 px en cuerpo y tarjetas, 12 px en el copyright |
 | Objetivos táctiles | 44 px de alto (botones, íconos sociales, enlaces del pie) |
-| Tarjetas de servicio | Horizontales: ícono de 44 px a la izquierda y texto a la derecha, en lugar de tarjetas de 138 px de alto |
-| Proyectos | Tira horizontal con scroll-snap; cada tarjeta ocupa el 78 % del ancho (16:10), así se ve parte de la siguiente |
+| Servicios (fusionados con Proyectos) | Tarjetas con la estética de las antiguas miniaturas de proyectos (degradado, esquinas de 10 px, 160 px de alto en escritorio) y el contenido de servicios: ícono, título, texto y flecha, en texto blanco sobre un velo oscuro inferior. La sección "Proyectos" ya no existe |
+| Servicios en móvil | Tira horizontal con scroll-snap; cada tarjeta ocupa el 78 % del ancho y 200 px de alto, así se ve parte de la siguiente |
 | Cifras | Cuadrícula de 2 columnas sin divisores |
 | Pie de página | Logotipo de 44 px, copyright centrado |
 
@@ -109,5 +109,5 @@ Escritorio queda como en la referencia. En móvil se ajustan las medidas según 
 
 - **Estimaciones.** `--muted` y `--ink` salen de los píxeles más oscuros de texto fino, que no siempre alcanza el color real del texto. Conviene validarlos con el diseñador.
 - **Texto del CTA.** El párrafo gris-azulado del CTA (`#C5CEE0`) es *derivado*. No se pudo medir con fiabilidad.
-- **Imágenes.** Las miniaturas de proyectos y la escena del hero son degradados provisionales, hasta contar con fotos reales.
+- **Imágenes.** Los fondos de las tarjetas de servicio y la escena del hero son degradados provisionales, hasta contar con fotos reales.
 - **Estados.** Faltan definir foco y deshabilitado. El hover de botones aclara un 15 %.
