@@ -66,7 +66,75 @@
     void track.offsetWidth;
   });
 
-  const next = () => go(index >= total ? 1 : index + 1);
+  // Salta sin animar a la diapositiva equivalente del otro extremo (la 1 y su clon se ven igual).
+  function jump(n) {
+    go(n, false);
+    void track.offsetWidth;
+  }
+
+  function next() {
+    if (index >= total) jump(0);
+    go(index + 1);
+  }
+
+  function prev() {
+    if (index === 0) jump(total);
+    go(index - 1);
+  }
+
+  // Deslizamiento táctil: la pista sigue al dedo y, al soltar, avanza o vuelve a su sitio.
+  const SWIPE_RATIO = 0.15;
+  let startX = null;
+  let startY = 0;
+  let dx = 0;
+  let dragging = false;
+  let justDragged = false;
+
+  track.addEventListener('pointerdown', (e) => {
+    if (e.pointerType === 'mouse') return;
+    startX = e.clientX;
+    startY = e.clientY;
+    dx = 0;
+    dragging = false;
+    stop();
+  });
+
+  track.addEventListener('pointermove', (e) => {
+    if (startX === null) return;
+    dx = e.clientX - startX;
+    if (!dragging) {
+      if (Math.abs(dx) < 10 || Math.abs(dx) < Math.abs(e.clientY - startY)) return;
+      dragging = true;
+      track.style.transition = 'none';
+      track.setPointerCapture(e.pointerId);
+    }
+    track.style.transform = `translateX(calc(${-100 * index}% + ${dx}px))`;
+  });
+
+  function endSwipe() {
+    if (startX === null) return;
+    startX = null;
+    if (dragging) {
+      const limit = track.offsetWidth * SWIPE_RATIO;
+      if (dx < -limit) next();
+      else if (dx > limit) prev();
+      else go(index);
+      justDragged = true;
+      setTimeout(() => { justDragged = false; }, 50);
+      // Tras el primer swipe el usuario manda: se detiene el avance automático (WCAG 2.2.2).
+      paused = true;
+      renderPause();
+    }
+    dragging = false;
+    start();
+  }
+  track.addEventListener('pointerup', endSwipe);
+  track.addEventListener('pointercancel', endSwipe);
+
+  // Un arrastre no debe contar como toque sobre un botón o enlace.
+  track.addEventListener('click', (e) => {
+    if (justDragged) { e.preventDefault(); e.stopPropagation(); }
+  }, true);
 
   function start() {
     if (timer || paused) return;
