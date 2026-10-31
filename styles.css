@@ -38,7 +38,7 @@ h1, h2, h3 { letter-spacing: -.025em; }
 
 /* Hero */
 .hero { position: relative; height: 500px; overflow: hidden; background: linear-gradient(90deg, var(--hero) 0%, var(--hero) 34%, #e8eef9 52%, #dfe7f5 100%); }
-.nav { position: relative; z-index: 4; height: 80px; }
+.nav { position: relative; z-index: 4; height: 80px; background: linear-gradient(180deg, rgba(240,245,253,.92), rgba(240,245,253,0)); }
 .nav__inner { height: 100%; display: flex; align-items: center; justify-content: space-between; }
 .nav__links { display: flex; gap: 36px; margin: 0 auto 0 clamp(2rem, 12.7vw, 213px); font-size: 14px; font-weight: 500; }
 .nav__links a { display: inline-flex; align-items: center; gap: 5px; }
@@ -69,7 +69,7 @@ h1, h2, h3 { letter-spacing: -.025em; }
 .hero p { max-width: 405px; margin: 14px 0 24px; font-size: 15.5px; line-height: 20px; color: var(--muted); }
 .hero__actions { display: flex; align-items: center; gap: 22px; }
 .hero__actions .btn { padding: 0 20px; }
-.play { display: inline-flex; align-items: center; gap: 8px; font-size: 11px; font-weight: 500; }
+.play { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 500; }
 .play__dot { display: grid; place-items: center; width: 36px; height: 36px; border-radius: 50%; background: #fff; border: 1px solid var(--line); box-shadow: 0 2px 8px rgba(0,0,14,.08); }
 
 /* Escena del hero (marcador de posición: sustituir por la foto real) */
@@ -80,10 +80,10 @@ h1, h2, h3 { letter-spacing: -.025em; }
     repeating-linear-gradient(90deg, rgba(120,150,200,.0) 0 90px, rgba(110,140,190,.28) 90px 120px, rgba(120,150,200,0) 120px 200px),
     linear-gradient(180deg, #e9f0fa 0%, #c3d3ea 60%, #9fb5d6 100%); filter: blur(2px); }
 .desk { position: absolute; left: 0; right: 0; bottom: 0; height: 70px; background: linear-gradient(180deg, rgba(190,205,230,.5), #8fa6c9 70%, #6f89b3); }
-.laptop { position: absolute; left: 34%; bottom: 74px; width: 270px; height: 165px; display: grid; place-items: center; border-radius: 6px 10px 6px 6px;
+.laptop { position: absolute; left: 32%; bottom: 62px; width: 340px; height: 208px; display: grid; place-items: center; border-radius: 6px 10px 6px 6px;
   background: linear-gradient(150deg, #1b335f 0%, var(--dark) 60%, #000103 100%); box-shadow: inset 0 0 0 3px #2c3d63, 0 30px 50px rgba(10,25,60,.35);
   transform-origin: bottom left; transform: perspective(900px) rotateY(-38deg) rotateZ(-4deg) skewY(-6deg); }
-.laptop__icon { color: #7fb0ff; filter: drop-shadow(0 0 14px rgba(40,110,255,.9)); }
+.laptop__icon { width: 104px; height: 104px; color: #7fb0ff; filter: drop-shadow(0 0 14px rgba(40,110,255,.9)); }
 .laptop img { width: 84px; height: auto; filter: drop-shadow(0 0 14px rgba(40,110,255,.9)) brightness(1.15); }
 .laptop-base { position: absolute; left: 0; bottom: 38px; width: 62%; height: 22px; background: linear-gradient(180deg, #e8edf5, #aab7cc); border-radius: 0 0 40px 4px; transform: skewX(-38deg) translateX(40px); box-shadow: 0 10px 20px rgba(10,25,60,.25); }
 
@@ -172,8 +172,9 @@ h1, h2, h3 { letter-spacing: -.025em; }
   .hero__device { position: relative; top: auto; bottom: auto; right: auto; width: 100%; height: 300px; margin-top: 16px; -webkit-mask-image: none; mask-image: none; }
   .hero__visual { top: auto; width: 100%; height: 300px; -webkit-mask-image: none; mask-image: none; }
   .desk { height: 48px; }
-  .laptop { left: 26%; bottom: 52px; transform: perspective(900px) rotateY(-38deg) rotateZ(-4deg) skewY(-6deg) scale(.72); }
+  .laptop { left: 26%; bottom: 52px; transform: perspective(900px) rotateY(-38deg) rotateZ(-4deg) skewY(-6deg) scale(.57); }
   .laptop-base { bottom: 26px; width: 56%; }
+  .laptop__icon { width: 84px; height: 84px; }
   .hero__dots { display: none; }
   /* Secciones: ritmo vertical de 32-40px, texto mínimo de 14px y objetivos táctiles de 44px */
   .row { grid-template-columns: 1fr; gap: 20px; }
@@ -203,4 +204,9 @@ h1, h2, h3 { letter-spacing: -.025em; }
   .footer__social { margin-right: 0; gap: 4px; }
   .footer__social a { display: grid; place-items: center; width: 44px; height: 44px; }
   .footer small { text-align: center; font-size: 12px; margin-top: 4px; }
+}
+
+/* Pantallas medianas: la ilustración cede espacio al texto para que no se solapen */
+@media (min-width: 1001px) and (max-width: 1280px) {
+  .hero__device { width: 50%; }
 }
