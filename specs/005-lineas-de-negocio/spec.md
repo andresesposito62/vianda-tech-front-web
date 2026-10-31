@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Vianda Tech organiza su oferta en seis líneas de negocio. Se presentan como tarjetas en la sección "Soluciones digitales para empresas" (`#servicios`, bajo el rótulo "Nuestros servicios"), en dos filas de tres en escritorio y apiladas en móvil. Esta spec es la fuente de verdad de los nombres y textos de las líneas: cualquier otra sección (carrusel, SEO, menú) debe ser coherente con ella.
+Vianda Tech organiza su oferta en cinco líneas de negocio. Se presentan como tarjetas en la sección "Soluciones digitales para empresas" (`#servicios`, bajo el rótulo "Nuestros servicios"), en dos filas (tres y dos) en escritorio y apiladas en móvil. Esta spec es la fuente de verdad de los nombres y textos de las líneas: cualquier otra sección (carrusel, SEO, menú) debe ser coherente con ella.
 
 Implementación: `index.html` (`ul.services`) y `styles.css` (`.services`, `.card`).
 
@@ -17,14 +17,13 @@ Implementación: `index.html` (`ul.services`) y `styles.css` (`.services`, `.car
 | 3 | Sitios Web Profesionales | Diseñamos páginas web que resaltan lo mejor de tu negocio y te ayudan a atraer nuevos clientes. | `i-code` |
 | 4 | Aplicaciones Móviles | Creamos experiencias digitales para que tus clientes puedan acceder a tu negocio desde cualquier lugar. | `i-phone` |
 | 5 | Automatización con IA | Hacemos que la inteligencia artificial trabaje para tu negocio, simplificando tareas y mejorando la atención al cliente. | `i-cpu` |
-| 6 | Renovación de Sistemas | Hacemos más eficiente el software de tu negocio, sin complicaciones. | `i-refresh` |
 
 ## Requerimientos funcionales
 
 | ID | Requerimiento |
 |---|---|
-| RF-01 | La sección muestra las seis líneas, en el orden de la tabla, con ícono, título, texto y flecha. |
-| RF-02 | En escritorio las tarjetas forman dos filas de tres. Su alto no es fijo: mínimo 138 px, crece con el texto y las de una misma fila se igualan. |
+| RF-01 | La sección muestra las cinco líneas, en el orden de la tabla, con ícono, título, texto y flecha. |
+| RF-02 | En escritorio las tarjetas forman dos filas: tres arriba y dos abajo. Su alto no es fijo: mínimo 138 px, crece con el texto y las de una misma fila se igualan. |
 | RF-03 | En móvil y tablet (1000 px o menos) las tarjetas se apilan, con el ícono a la izquierda y el texto a la derecha. |
 | RF-04 | Los textos de las tarjetas pueden ocupar hasta cuatro renglones en escritorio. No se aplica el límite de dos renglones de la spec 002 (RF-14), que es solo para el carrusel. |
 | RF-05 | Cada línea tiene un ícono propio, de trazo de 2 px y sin rellenos, para que se vea nítido a 26 px (spec 001). |
@@ -32,14 +31,15 @@ Implementación: `index.html` (`ul.services`) y `styles.css` (`.services`, `.car
 
 ## Relación con otras secciones
 
-- **Carrusel (spec 002).** Siete diapositivas: la 1 es el mensaje de marca (sin línea asociada) y las 2 a 7 siguen el orden de la tabla, con Sitios Web Profesionales primero. Cada una usa el ícono de su tarjeta.
+- **Carrusel (spec 002).** Seis diapositivas: la 1 es el mensaje de marca (sin línea asociada) y las 2 a 6 siguen el orden de la tabla, con Sitios Web Profesionales primero. Cada una usa el ícono de su tarjeta.
 - **SEO (spec 004).** Las palabras clave "desarrollo de software" y "páginas web" corresponden a las líneas 1 y 3. "Páginas para tu negocio" y "innovación" no aparecen en las tarjetas, pero sí en la descripción de la página.
-- **Enlaces.** Las seis tarjetas apuntan a `#`, pendientes de tener una página o sección por línea (spec 004, RF-12).
+- **Enlaces.** Las cinco tarjetas apuntan a `#`, pendientes de tener una página o sección por línea (spec 004, RF-12).
 
 ## Puntos abiertos
 
 - **Integraciones.** ✅ Resuelto: no es una línea de negocio y no se ofrece como servicio independiente. Consecuencias resueltas: la diapositiva sobre integraciones se reemplazó, el submenú "Servicios" del menú de escritorio lista las seis líneas y se eliminó el ícono `i-puzzle`.
 - **Carrusel.** ✅ Resuelto: las diapositivas coinciden con las líneas de negocio.
+- **Renovación de Sistemas.** ✅ Eliminada como línea de negocio el 2026-10-31: se quitaron su tarjeta, su entrada del submenú, la diapositiva 7 del carrusel y el ícono `i-refresh`.
 - **Páginas por línea.** Cada línea merece su propia página con `h1`, `title` y `description` para SEO.
 - **Íconos del carrusel.** ✅ Resuelto: usan los mismos que las tarjetas. `i-puzzle` ya no se usa en ningún lado y se puede eliminar.
 - **Textos.** Aprobados por el cliente el 2026-10-31 en la conversación de diseño; no hay versión validada con terceros.

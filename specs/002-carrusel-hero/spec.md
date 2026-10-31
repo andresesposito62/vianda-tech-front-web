@@ -27,8 +27,8 @@ Implementación: `index.html` (`.hero__carousel`), `styles.css` (sección "Carru
 | RF-13 | Tras el primer swipe, el avance automático se detiene y no se reanuda solo (en escritorio táctil, el botón de pausa pasa a "reanudar"). Un simple toque sin arrastre no cuenta como swipe. |
 | RF-14 | La descripción de cada diapositiva (el texto bajo el titular) no debe superar **dos renglones** en ninguna pantalla. Si se cambia el texto, hay que comprobar que siga cumpliéndolo, sobre todo en móvil. |
 | RF-15 | Jerarquía y legibilidad: el CTA principal ("Descubrir más") es un botón relleno y único (no hay botón secundario). La barra superior lleva un degradado suave de fondo en escritorio para que el menú se lea sobre la foto. |
-| RF-16 | Entre 1001 y 1280 px la ilustración ocupa el 50 % del ancho (no el 56 %) para no solaparse con el titular. El portátil de las diapositivas 2 a 7 mide 340 × 208 px en escritorio y está apoyado sobre su base. |
-| RF-17 | En escritorio las imágenes de las diapositivas 1 a 4 no llegan al borde superior: arranca bajo la barra de navegación (76 px) con un borde superior nítido, y se difumina únicamente por el borde derecho (a partir del 68 % de su ancho) para no llegar de golpe al límite de la pantalla. El encuadre está centrado en los rostros. En móvil va debajo del texto, sin cambios. |
+| RF-16 | Entre 1001 y 1280 px la ilustración ocupa el 50 % del ancho (no el 56 %) para no solaparse con el titular. |
+| RF-17 | En escritorio las imágenes de las diapositivas 1 a 6 no llegan al borde superior: arranca bajo la barra de navegación (76 px) con un borde superior nítido, y se difumina únicamente por el borde derecho (a partir del 68 % de su ancho) para no llegar de golpe al límite de la pantalla. El encuadre está centrado en los rostros. En móvil va debajo del texto, sin cambios. |
 
 ## Contenido de las diapositivas
 
@@ -36,13 +36,12 @@ Implementación: `index.html` (`.hero__carousel`), `styles.css` (sección "Carru
 |---|---|---|
 | 1 | Tecnología que impulsa tu **negocio** | Foto de dos personas con un portátil e íconos flotantes (`assets/hero-1.jpg`), en lugar del portátil |
 | 2 | Páginas web que trabajan por **ti** | Foto de un portátil mostrando un sitio web de Vianda Tech sobre un escritorio (`assets/hero-2.jpg`), en lugar del portátil |
-| 3 | Software hecho a la **medida** | Banner de una ventana de código con un chip de IA y paneles flotantes (`assets/hero-3.jpg`), en lugar del portátil |
-| 4 | Asesoría que cuida tu **inversión** | Foto de dos personas con una interfaz holográfica de código (`assets/hero-4.jpg`, saturación al 72 % para ajustarla a la paleta), en lugar del portátil |
-| 5 | Tu negocio, en cada **móvil** | Ícono de teléfono |
-| 6 | Procesos que se automatizan con **IA** | Ícono de estrella de IA |
-| 7 | Sistemas que vuelven a **rendir** | Ícono de flechas circulares |
+| 3 | Software hecho a la **medida** | Foto de una desarrolladora con un portátil e interfaces de código flotantes en una oficina moderna (`assets/hero-3.jpg`, saturación al 72 %, y la piel ajustada al tono de la mujer de la diapositiva 5, al 88 % de su color original), en lugar del portátil |
+| 4 | Asesoría que cuida tu **inversión** | Foto de dos personas con una interfaz holográfica de código (`assets/hero-4.jpg`, saturación al 72 % para ajustarla a la paleta, conservando la piel al 88 % de su color original), en lugar del portátil |
+| 5 | Tu negocio, en cada **móvil** | Foto de una mujer usando el móvil con íconos de compra flotantes en una oficina (`assets/hero-5.jpg`, saturación al 62 % para ajustarla a la paleta), en lugar del portátil |
+| 6 | Procesos que se automatizan con **IA** | Banner de una ventana de código con un chip de IA y paneles flotantes (`assets/hero-6.jpg`, saturación al 65 % para ajustarlo a la paleta), en lugar del portátil |
 
-La palabra en negrita de cada titular usa `--accent`. La diapositiva 1 es el mensaje de marca y no se asocia a una línea de negocio. Las diapositivas 2 a 7 corresponden, en orden, a las líneas de la spec 005: Sitios Web Profesionales, Software a Medida, Asesoría Tecnológica, Aplicaciones Móviles, Automatización con IA y Renovación de Sistemas. Cada descripción reutiliza el texto de la tarjeta de la spec 005, abreviado cuando hace falta para respetar RF-14. Los textos son provisionales, pendientes de validar con el cliente. El resto de textos está en `index.html`.
+La palabra en negrita de cada titular usa `--accent`. La diapositiva 1 es el mensaje de marca y no se asocia a una línea de negocio. Las diapositivas 2 a 6 corresponden, en orden, a las líneas de la spec 005: Sitios Web Profesionales, Software a Medida, Asesoría Tecnológica, Aplicaciones Móviles y Automatización con IA. Cada descripción reutiliza el texto de la tarjeta de la spec 005, abreviado cuando hace falta para respetar RF-14. Los textos son provisionales, pendientes de validar con el cliente. El resto de textos está en `index.html`.
 
 ## Accesibilidad
 
@@ -66,5 +65,5 @@ La palabra en negrita de cada titular usa `--accent`. La diapositiva 1 es el men
 - **Imágenes.** Las pantallas del portátil usan íconos genéricos, a la espera de capturas o piezas reales de cada servicio.
 - **Pausa en móvil.** Sin botón de pausa, el usuario que no hace swipe no puede detener el avance automático, lo que cumple WCAG 2.2.2 solo en parte. Se aceptó por decisión de diseño y se mitiga con RF-13. En móvil, una vez detenido, no hay forma de reanudarlo salvo recargar la página.
 - **Navegación.** No hay flechas. En escritorio no se arrastra con el ratón, solo hay puntos y pausa.
-- **Enlaces.** Los siete botones "Descubrir más" apuntan a `#servicios`. Podrían enlazar a la sección de cada línea de negocio. Se quitó el botón secundario ("Ver proyectos" y luego "Contáctanos"); el contacto queda en el menú, en "Hablemos" y en la sección final.
+- **Enlaces.** Los seis botones "Descubrir más" apuntan a `#servicios`. Podrían enlazar a la sección de cada línea de negocio. Se quitó el botón secundario ("Ver proyectos" y luego "Contáctanos"); el contacto queda en el menú, en "Hablemos" y en la sección final.
 - **Pruebas.** Se verificó con capturas el avance de la diapositiva 1 a la 2, la presencia del botón de pausa y que los controles no aparecen a 900 px. El swipe se probó en Chrome de escritorio con eventos táctiles simulados: avanzar, saltar de la última a la primera, retroceder desde la primera y descartar un arrastre corto. Falta probarlo en un dispositivo real, y probar el clic en pausa y los puntos. No hay pruebas automatizadas.
