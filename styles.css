@@ -142,7 +142,7 @@ h1, h2, h3 { letter-spacing: -.025em; }
 /* Responsive */
 @media (max-width: 1000px) {
   .nav__inner { gap: 1rem; }
-  .nav__inner .btn--nav { margin-left: auto; }
+  .burger { margin-left: auto; }
   .burger { display: grid; place-content: center; gap: 5px; width: 44px; height: 44px; padding: 0; border: 0; background: none; color: var(--primary-text); cursor: pointer; }
   .burger span { display: block; width: 22px; height: 2px; border-radius: 2px; background: currentColor; transition: transform .25s, opacity .2s; }
   .burger[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
@@ -174,7 +174,10 @@ h1, h2, h3 { letter-spacing: -.025em; }
   .nav__inner { padding-bottom: 10px; }
   .logo img { height: 52px; }
   .btn { height: 44px; }
-  .btn--nav { height: 36px; }
+  /* "Hablemos": botón flotante abajo a la derecha (pulgar), de 52 px, que se oculta con el menú abierto o cuando ya se ve la sección de contacto */
+  .btn--nav { position: fixed; z-index: 25; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom, 0px)); height: 52px; padding: 0 22px; gap: 8px; font-size: 16px; box-shadow: 0 8px 20px rgba(0,49,83,.35), 0 2px 6px rgba(0,0,14,.2); transition: opacity .25s, transform .25s, visibility 0s; }
+  .btn--nav svg { width: 16px; height: 16px; }
+  .btn--nav.is-hidden, body.menu-open .btn--nav { opacity: 0; visibility: hidden; transform: translateY(12px); pointer-events: none; transition: opacity .25s, transform .25s, visibility 0s .25s; }
   /* Hero móvil: la ilustración va arriba (mismo alto en todas las diapositivas) y el texto debajo, con el botón siempre a la misma altura */
   .hero { height: auto; }
   .hero__carousel { position: relative; inset: auto; }
@@ -212,7 +215,7 @@ h1, h2, h3 { letter-spacing: -.025em; }
   .cta p { padding: 0; border: 0; height: auto; font-size: 14px; line-height: 20px; }
   .cta .btn { margin: 0; justify-self: start; }
   .footer__line { display: none; }
-  .footer { margin-top: 24px; justify-content: space-between; gap: .5rem 1rem; }
+  .footer { margin-top: 24px; padding-bottom: 84px; justify-content: space-between; gap: .5rem 1rem; }
   .footer .logo img { height: 44px; }
   .footer nav { order: 3; flex-basis: 100%; flex-wrap: wrap; gap: 0 1.25rem; }
   .footer nav a { padding-block: 12px; }
