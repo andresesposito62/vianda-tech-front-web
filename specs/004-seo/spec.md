@@ -15,9 +15,9 @@ Implementación: `index.html` (`<head>` y estructura), archivos de raíz (`robot
 | `lang="es"`, `<title>`, `meta description`, `viewport` | Presentes |
 | Un solo `h1` (primera diapositiva del carrusel), el resto `h2` | Cumple |
 | `alt` en el logotipo; íconos decorativos con `aria-hidden` | Cumple |
-| URL canónica, Open Graph, Twitter Card, favicon | Faltan |
-| Datos estructurados (JSON-LD) | Faltan |
-| `robots.txt` y `sitemap.xml` | Faltan |
+| URL canónica, Open Graph, Twitter Card, favicon, `theme-color` | Presentes (favicon provisional con `logo-mark.png`) |
+| Datos estructurados (`ProfessionalService`: correo, teléfono, dirección y área de servicio) | Presentes |
+| `robots.txt` y `sitemap.xml` | Presentes (solo la portada) |
 | Enlaces con destino real (varios usan `href="#"`) | Pendiente |
 
 ## Requerimientos funcionales
@@ -28,14 +28,28 @@ Implementación: `index.html` (`<head>` y estructura), archivos de raíz (`robot
 | RF-02 | Cada página tiene una `meta description` única, de entre 120 y 160 caracteres, redactada como invitación a hacer clic. |
 | RF-03 | Cada página tiene un solo `h1`, con la palabra clave principal, y los `h2` y `h3` siguen un orden jerárquico sin saltos. El contenido visible en el HTML inicial no depende de JavaScript para indexarse. |
 | RF-04 | Se declara `<link rel="canonical">` con la URL definitiva de cada página. |
-| RF-05 | Open Graph (`og:title`, `og:description`, `og:image`, `og:url`, `og:type`, `og:locale` = `es_ES` o la variante del mercado) y Twitter Card (`summary_large_image`), con una imagen de 1200 × 630 px. |
-| RF-06 | Datos estructurados JSON-LD de tipo `Organization` (nombre, logotipo, URL, redes sociales) y, cuando haya contacto público, `LocalBusiness` o `ProfessionalService`. |
+| RF-05 | Open Graph (`og:title`, `og:description`, `og:image`, `og:url`, `og:type`, `og:locale` = `es_CO`) y Twitter Card (`summary_large_image`), con una imagen de 1200 × 630 px. |
+| RF-06 | Datos estructurados JSON-LD de tipo `ProfessionalService` (nombre, logotipo, URL, redes sociales) y, cuando haya contacto público, `LocalBusiness` o `ProfessionalService`. |
 | RF-07 | Existen `robots.txt` (con la ruta del sitemap) y `sitemap.xml`. Se actualizan al añadir páginas. |
 | RF-08 | Las imágenes con contenido llevan `alt` descriptivo; las decorativas llevan `alt=""` o `aria-hidden`. Todas declaran `width` y `height`. Las que no están en la primera pantalla usan `loading="lazy"`. |
 | RF-09 | Los enlaces usan texto descriptivo (no "clic aquí") y apuntan a destinos reales. Los `href="#"` provisionales se sustituyen antes de publicar. |
 | RF-10 | Las URL son cortas, en minúsculas y sin acentos, con guiones. Los anclajes de sección (`#servicios`, `#proyectos`, `#contacto`) tienen un `id` estable. |
 | RF-11 | Hay favicon y `theme-color`. |
 | RF-12 | Cuando el sitio crezca (blog, páginas de servicio), cada servicio tiene su propia página con su `h1`, `title` y `description`, en lugar de vivir solo como sección de la portada. |
+
+## Palabras clave
+
+**Dominio:** `https://viandatech.com/`
+
+| Prioridad | Término | Dónde debe aparecer |
+|---|---|---|
+| Principal | desarrollo de software | `title`, `meta description`, JSON-LD |
+| Principal | páginas web | `title`, `meta description`, titulares y textos de servicios |
+| Principal | páginas para tu negocio | `meta description`, textos de servicios |
+| Secundaria | IA (inteligencia artificial) | `title`, textos de automatización |
+| Secundaria | innovación | `meta description`, textos generales |
+
+Aplicado hoy: `title` «Vianda Tech | Desarrollo de software, páginas web e IA» y `description` «Desarrollo de software y páginas web para tu negocio. Innovación e IA para automatizar procesos y hacer crecer tu empresa.» El `h1` se mantiene como «Tecnología que impulsa tu negocio» por decisión de marca.
 
 ## Rendimiento (Core Web Vitals)
 
@@ -56,10 +70,10 @@ El rendimiento debe medirse en móvil, porque Google indexa primero la versión 
 
 ## Puntos abiertos
 
-- **Dominio y URL canónica.** No hay dominio definitivo; sin él no se pueden fijar `canonical`, `og:url` ni el sitemap.
-- **Palabras clave.** No hay lista de términos objetivo ni mercado geográfico definido (país o ciudad). Condiciona los textos y `og:locale`.
-- **Imagen para redes.** Falta una imagen de 1200 × 630 px para Open Graph.
-- **Datos de contacto.** El correo `contacto@viandatech.com` es provisional; `LocalBusiness` necesita dirección o área de servicio reales.
+- **Dominio.** Definido: `https://viandatech.com/`. Falta confirmar si se usa con o sin `www` y que el servidor redirija HTTP a HTTPS.
+- **Mercado geográfico.** Todo Colombia (`areaServed`), con sede en Cajicá, Cundinamarca. `og:locale` es `es_CO`.
+- **Imagen para redes.** `assets/og-image.png` mide 1732 × 908 px (proporción 1,91:1, válida) y pesa 1,8 MB; conviene optimizarla a menos de 300 KB. Su texto describe «Desarrollamos páginas web y automatizamos procesos con IA…», distinto de la descripción nueva.
+- **Datos de contacto.** Correo `contacto@viandatech.com`, teléfono `+573145314993` y dirección «Diagonal 4a #4e-20, Cajicá». Están en el JSON-LD (`ProfessionalService`). Falta confirmar si se muestran también en el pie de la página (conviene que coincidan con el JSON-LD).
 - **Blog y páginas de servicio.** `#blog` hoy apunta al pie y no hay contenido. Un blog real sería la mayor palanca de SEO a medio plazo.
 - **Analítica.** No hay Search Console ni analítica configuradas.
 - **Pruebas.** Ninguna verificación hecha todavía: faltan Lighthouse, validación de datos estructurados y revisión de la vista previa al compartir.
