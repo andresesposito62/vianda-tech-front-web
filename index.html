@@ -36,7 +36,7 @@
     <nav class="nav" aria-label="Principal">
       <div class="container nav__inner">
         <a class="logo" href="#"><img src="assets/logo.png" width="2097" height="750" alt="Vianda Tech"></a>
-        <ul class="nav__links">
+        <ul class="nav__links" id="menu">
           <li class="has-menu">
             <a href="#servicios">Servicios <svg class="chev" width="10" height="10"><use href="#i-chev"/></svg></a>
             <ul class="submenu">
@@ -51,6 +51,9 @@
           <li><a href="#contacto">Contacto</a></li>
         </ul>
         <a class="btn btn--deep btn--nav" href="#contacto">Hablemos <svg width="12" height="12"><use href="#i-arrow"/></svg></a>
+        <button class="burger" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </nav>
 
@@ -195,11 +198,11 @@
       <a href="#servicios">Servicios</a>
       <a href="#proyectos" aria-current="page">Proyectos</a>
       <a href="#nosotros">Nosotros</a>
-      <a href="#blog" id="blog">Blog</a>
+      <a href="#blog">Blog</a>
       <a href="#contacto">Contacto</a>
     </nav>
     <span class="footer__line footer__line--l" aria-hidden="true"></span>
-    <div class="footer__social">
+    <div class="footer__social" id="blog">
       <a href="#" aria-label="LinkedIn"><svg width="20" height="20"><use href="#i-in"/></svg></a>
       <a href="#" aria-label="YouTube"><svg width="22" height="22"><use href="#i-yt"/></svg></a>
       <a href="#" aria-label="X"><svg width="18" height="18"><use href="#i-x"/></svg></a>

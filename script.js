@@ -153,3 +153,18 @@
   renderPause();
   start();
 })();
+
+// Menú hamburguesa (móvil): abre/cierra el panel de enlaces; se cierra al elegir uno o con Escape.
+(() => {
+  const burger = document.querySelector('.burger');
+  const menu = document.getElementById('menu');
+  if (!burger || !menu) return;
+  const set = (open) => {
+    menu.classList.toggle('is-open', open);
+    burger.setAttribute('aria-expanded', String(open));
+    burger.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+  };
+  burger.addEventListener('click', () => set(!menu.classList.contains('is-open')));
+  menu.addEventListener('click', (e) => { if (e.target.closest('a')) set(false); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') set(false); });
+})();
