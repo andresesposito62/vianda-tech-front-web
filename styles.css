@@ -87,6 +87,8 @@ h1, h2, h3 { letter-spacing: -.025em; }
 
 /* Foto de la primera diapositiva: ocupa todo el bloque del dispositivo, encuadrada en los rostros */
 .hero__photo { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 22%; }
+.hero__photo--3 { object-position: 60% 50%; }
+.hero__photo--4 { object-position: 72% 40%; }
 
 /* Filas con intro a la izquierda */
 .row { display: grid; grid-template-columns: 299px 1fr; align-items: start; }
@@ -234,4 +236,6 @@ h1, h2, h3 { letter-spacing: -.025em; }
 /* Escritorio: la foto de la primera diapositiva arranca bajo la barra superior y se difumina por el borde derecho */
 @media (min-width: 1001px) {
   .hero__photo { height: calc(100% - 76px); margin-top: 76px; object-position: 50% 32%; -webkit-mask-image: linear-gradient(90deg, #000 68%, transparent 100%); mask-image: linear-gradient(90deg, #000 68%, transparent 100%); }
+  .hero__photo--3 { object-position: 50% 50%; -webkit-mask-image: linear-gradient(90deg, #000 82%, transparent 100%); mask-image: linear-gradient(90deg, #000 82%, transparent 100%); }
+  .hero__photo--4 { object-position: 50% 40%; -webkit-mask-image: linear-gradient(90deg, #000 90%, transparent 100%); mask-image: linear-gradient(90deg, #000 90%, transparent 100%); }
 }
