@@ -36,7 +36,7 @@ Implementación: `index.html` (`.hero__carousel`), `styles.css` (sección "Carru
 | 3 | Procesos que se automatizan con **IA** | Ícono de chip |
 | 4 | Tus herramientas, todas **conectadas** | Ícono de puzzle |
 
-La palabra en negrita de cada titular usa `--accent`. Las diapositivas 2 a 4 corresponden a los tres servicios de la sección "Nuestros servicios". Los textos son provisionales, pendientes de validar con el cliente. El resto de textos está en `index.html`.
+La palabra en negrita de cada titular usa `--accent`. Las diapositivas 2 a 4 se redactaron antes de las seis líneas de negocio de la spec 005 y falta alinearlas con ellas. Los textos son provisionales, pendientes de validar con el cliente. El resto de textos está en `index.html`.
 
 ## Accesibilidad
 
