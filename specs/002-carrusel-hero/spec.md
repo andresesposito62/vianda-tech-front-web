@@ -28,7 +28,7 @@ Implementación: `index.html` (`.hero__carousel`), `styles.css` (sección "Carru
 | RF-14 | La descripción de cada diapositiva (el texto bajo el titular) no debe superar **dos renglones** en ninguna pantalla. Si se cambia el texto, hay que comprobar que siga cumpliéndolo, sobre todo en móvil. |
 | RF-15 | Jerarquía y legibilidad: el CTA principal ("Descubrir más") es un botón relleno y único (no hay botón secundario). La barra superior lleva un degradado suave de fondo en escritorio para que el menú se lea sobre la foto. |
 | RF-16 | Entre 1001 y 1280 px la ilustración ocupa el 50 % del ancho (no el 56 %) para no solaparse con el titular. El portátil de las diapositivas 2 a 7 mide 340 × 208 px en escritorio y está apoyado sobre su base. |
-| RF-17 | En escritorio las fotos de las diapositivas 1 y 2 no llegan al borde superior: arranca bajo la barra de navegación (76 px) con un borde superior nítido, y se difumina únicamente por el borde derecho (a partir del 68 % de su ancho) para no llegar de golpe al límite de la pantalla. El encuadre está centrado en los rostros. En móvil va debajo del texto, sin cambios. |
+| RF-17 | En escritorio las imágenes de las diapositivas 1, 2 y 3 no llegan al borde superior: arranca bajo la barra de navegación (76 px) con un borde superior nítido, y se difumina únicamente por el borde derecho (a partir del 68 % de su ancho) para no llegar de golpe al límite de la pantalla. El encuadre está centrado en los rostros. En móvil va debajo del texto, sin cambios. |
 
 ## Contenido de las diapositivas
 
@@ -36,7 +36,7 @@ Implementación: `index.html` (`.hero__carousel`), `styles.css` (sección "Carru
 |---|---|---|
 | 1 | Tecnología que impulsa tu **negocio** | Foto de dos personas con un portátil e íconos flotantes (`assets/hero-1.jpg`), en lugar del portátil |
 | 2 | Páginas web que trabajan por **ti** | Foto de un portátil mostrando un sitio web de Vianda Tech sobre un escritorio (`assets/hero-2.jpg`), en lugar del portátil |
-| 3 | Software hecho a la **medida** | Ícono de terminal |
+| 3 | Software hecho a la **medida** | Banner de una ventana de código con un chip de IA y paneles flotantes (`assets/hero-3.jpg`), en lugar del portátil |
 | 4 | Asesoría que cuida tu **inversión** | Ícono de burbuja de chat |
 | 5 | Tu negocio, en cada **móvil** | Ícono de teléfono |
 | 6 | Procesos que se automatizan con **IA** | Ícono de estrella de IA |
