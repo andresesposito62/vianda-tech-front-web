@@ -90,6 +90,7 @@ h1, h2, h3 { letter-spacing: -.025em; }
 .hero__photo--3 { object-position: 70% 30%; }
 .hero__photo--6 { object-position: 60% 50%; }
 .hero__photo--4 { object-position: 72% 40%; }
+.hero__photo--5 { object-position: 60% 30%; }
 
 /* Filas con intro a la izquierda */
 .row { display: grid; grid-template-columns: 299px 1fr; align-items: start; }
@@ -240,4 +241,5 @@ h1, h2, h3 { letter-spacing: -.025em; }
   .hero__photo--3 { object-position: 50% 30%; -webkit-mask-image: linear-gradient(90deg, #000 92%, transparent 100%); mask-image: linear-gradient(90deg, #000 92%, transparent 100%); }
   .hero__photo--6 { object-position: 50% 50%; -webkit-mask-image: linear-gradient(90deg, #000 82%, transparent 100%); mask-image: linear-gradient(90deg, #000 82%, transparent 100%); }
   .hero__photo--4 { object-position: 50% 40%; -webkit-mask-image: linear-gradient(90deg, #000 90%, transparent 100%); mask-image: linear-gradient(90deg, #000 90%, transparent 100%); }
+  .hero__photo--5 { object-position: 50% 30%; -webkit-mask-image: linear-gradient(90deg, #000 92%, transparent 100%); mask-image: linear-gradient(90deg, #000 92%, transparent 100%); }
 }
