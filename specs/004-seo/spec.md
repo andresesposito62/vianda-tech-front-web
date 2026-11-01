@@ -74,6 +74,6 @@ El rendimiento debe medirse en móvil, porque Google indexa primero la versión 
 - **Mercado geográfico.** Todo Colombia (`areaServed`), con sede en Cajicá, Cundinamarca. `og:locale` es `es_CO`.
 - **Imagen para redes.** `assets/og-image.jpg` mide 1200 × 629 px (proporción 1,91:1) y pesa 106 KB (era PNG de 1,8 MB). Su texto describe «Desarrollamos páginas web y automatizamos procesos con IA…», distinto de la descripción nueva.
 - **Datos de contacto.** Correo oficial único `contacto@viandatech.com` (ver constitución), teléfono oficial `+573223064409` (también el único número de WhatsApp, ver constitución) y dirección «Diagonal 4a #4e-20, Cajicá». Están en el JSON-LD (`ProfessionalService`). Falta confirmar si se muestran también en el pie de la página (conviene que coincidan con el JSON-LD).
-- **Blog y páginas de servicio.** `#blog` hoy apunta al pie y no hay contenido. Un blog real sería la mayor palanca de SEO a medio plazo.
+- **Blog y páginas de servicio.** `#blog` ya no existe: el enlace «Blog» está oculto hasta implementar la sección (spec 003, RF-12). Un blog real sería la mayor palanca de SEO a medio plazo.
 - **Analítica.** No hay Search Console ni analítica configuradas.
 - **Pruebas.** Ninguna verificación hecha todavía: faltan Lighthouse, validación de datos estructurados y revisión de la vista previa al compartir.
