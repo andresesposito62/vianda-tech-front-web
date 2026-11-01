@@ -31,4 +31,4 @@ Implementación: `quienes-somos.html` y `styles.css` (bloque "Página interna").
 ## Puntos abiertos
 
 - **Imágenes.** La página no usa fotos; se puede sumar una de `assets/` cuando el cliente lo pida.
-- **Enlaces del pie.** "Blog" y las redes siguen apuntando a anclas o a `#` (spec 004, RF-12).
+- **Enlaces del pie.** El enlace «Blog» está oculto (spec 003, RF-12) y las redes siguen apuntando a `#` (spec 004, RF-12).
