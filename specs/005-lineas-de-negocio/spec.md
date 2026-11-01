@@ -6,7 +6,9 @@
 
 Vianda Tech organiza su oferta en cinco líneas de negocio. Se presentan como tarjetas en la sección "Soluciones digitales para empresas" (`#servicios`, bajo el rótulo "Nuestros servicios"), apiladas en una sola columna vertical, en escritorio y en móvil. Esta spec es la fuente de verdad de los nombres y textos de las líneas: cualquier otra sección (carrusel, SEO, menú) debe ser coherente con ella.
 
-Implementación: `index.html` (`ul.services`) y `styles.css` (`.services`, `.card`).
+> **Actualización 2026-11-01 (spec 006):** la presentación pasó de tarjetas en una columna a una lista de dos columnas con divisores (`ul.lines`, `.line`). Los nombres, textos e íconos de abajo siguen vigentes; RF-02 y RF-03 quedan reemplazados por la spec 006 (RF-03).
+
+Implementación: `index.html` (`ul.lines`) y `styles.css` (`.lines`, `.line`).
 
 ## Líneas de negocio
 
@@ -22,7 +24,7 @@ Implementación: `index.html` (`ul.services`) y `styles.css` (`.services`, `.car
 
 | ID | Requerimiento |
 |---|---|
-| RF-01 | La sección muestra las cinco líneas, en el orden de la tabla, con ícono, título, texto y flecha. |
+| RF-01 | La sección muestra las cinco líneas, en el orden de la tabla, con ícono, título, texto y flecha. |gurade una imagen en descargas/estado chrome.JPG
 | RF-02 | En escritorio las tarjetas forman una lista vertical de una columna, a todo el ancho de la columna derecha de la sección, con 12 px entre ellas. Cada tarjeta es horizontal: ícono de 60 px a la izquierda, título (17 px) y texto (14 px) en el centro, y flecha a la derecha. Su alto depende del texto (hasta dos renglones) y no hay huecos vacíos.
 | RF-03 | En móvil y tablet (1000 px o menos) la lista es igual pero más compacta: ícono de 44 px y texto de 16 y 14 px. |
 | RF-04 | Los textos de las tarjetas pueden ocupar hasta cuatro renglones en escritorio. No se aplica el límite de dos renglones de la spec 002 (RF-14), que es solo para el carrusel. |
