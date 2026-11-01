@@ -178,7 +178,7 @@ h1, h2, h3 { letter-spacing: -.025em; }
 .cta { padding-block: 96px; background: var(--dark); color: #fff; }
 .cta__inner { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: end; }
 .cta h2 { font-size: clamp(32px, 3.8vw, 52px); line-height: 1.08; font-weight: 700; letter-spacing: -.035em; }
-.cta em { color: var(--primary-on-dark); }
+.cta em { color: var(--primary-soft); }
 .cta p { margin-bottom: 28px; max-width: 420px; font-size: 17px; line-height: 1.6; color: #c5cee0; }
 
 /* Footer */

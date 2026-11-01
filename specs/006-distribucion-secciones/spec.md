@@ -25,7 +25,7 @@ Implementación: `index.html` (`main`) y `styles.css` (bloques "Secciones" a "CT
 | ID | Requerimiento |
 |---|---|
 | RF-01 | Secciones con 104 px de relleno vertical en escritorio y 64 px en móvil (1000 px o menos). Titulares de sección entre 34 y 56 px, peso 700. |
-| RF-02 | Los acentos usan solo la paleta de la spec 001: `--primary` (bloque de cifra), `--primary-soft` (botones sobre oscuro) y `--primary-on-dark` (palabras destacadas sobre oscuro). No se introducen colores nuevos. |
+| RF-02 | Los acentos usan solo la paleta de la spec 001: `--primary` (bloque de cifra), `--primary-soft` (botones y palabras destacadas sobre oscuro, como "por tu negocio." y "al siguiente nivel?"). No se introducen colores nuevos. |
 | RF-03 | ~~Lista de líneas a dos columnas~~ Retirado el 2026-11-01: la sección "Nuestros servicios / Soluciones digitales para empresas" se eliminó a pedido del cliente. Las cinco líneas se presentan en la galería de la sección 5 (ancla `#servicios`), en la sección oscura de IA, en el carrusel y en el submenú. |
 | RF-04 | Las imágenes usan `height: auto` con `aspect-ratio`, porque el atributo `height` del HTML las estiraría. |
 | RF-05 | Sin JavaScript nuevo: solo CSS. |
