@@ -92,7 +92,7 @@ h1, h2, h3 { letter-spacing: -.025em; }
 .hero__photo--4 { object-position: 72% 40%; }
 .hero__photo--5 { object-position: 60% 30%; }
 
-/* Secciones (distribución inspirada en globant.com/es: títulos grandes a la izquierda, texto a la derecha, mucho aire vertical) */
+/* Secciones (spec 006: títulos grandes a la izquierda, texto a la derecha, mucho aire vertical) */
 .section { padding-block: 104px; }
 .section--tint { background: var(--surface); }
 .section--dark { background: var(--dark); color: #fff; }

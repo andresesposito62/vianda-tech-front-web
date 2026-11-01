@@ -4,7 +4,7 @@
 
 ## Resumen
 
-La home adopta la distribución de secciones y el tipo de componentes de `https://www.globant.com/es` (títulos grandes a la izquierda y texto a la derecha, mucho aire vertical, fondos alternados, listas con divisores, tarjetas de imagen y cuadrícula asimétrica). Se conserva **todo lo propio de Vianda Tech**: las cinco líneas de negocio (spec 005), las imágenes de `assets/` y la paleta (spec 001). No se copian textos, logos ni imágenes de Globant.
+**Esta es la referencia vigente de look and feel de la home.** Define la distribución de secciones y el tipo de componentes: títulos grandes a la izquierda y texto a la derecha, mucho aire vertical, fondos alternados, listas con divisores, tarjetas de imagen y cuadrícula asimétrica. Usa las cinco líneas de negocio (spec 005), las imágenes de `assets/` y la paleta (spec 001).
 
 Implementación: `index.html` (`main`) y `styles.css` (bloques "Secciones" a "CTA").
 
@@ -13,7 +13,7 @@ Implementación: `index.html` (`main`) y `styles.css` (bloques "Secciones" a "CT
 | # | Sección | Fondo | Componente (referencia) | Contenido propio |
 |---|---|---|---|---|
 | 1 | Hero con carrusel (spec 002) | `--hero` | Titular grande + CTA en píldora | Seis diapositivas, `hero-1` a `hero-6` |
-| 2 | Introducción + cifras | blanco | Párrafo centrado + franja de cifras (equivale a la franja de logos) | Descripción de la empresa; 99.9 %, mayor eficiencia, soporte experto |
+| 2 | Introducción + cifras | blanco | Párrafo centrado + franja de cifras | Descripción de la empresa; 99.9 %, mayor eficiencia, soporte experto |
 | 3 | IA que trabaja por tu negocio (`#ia`) | `--dark` | Título + dos ítems con divisor; marco de producto con CTA | Líneas 5 y 2; `hero-6` |
 | 4 | Soluciones digitales para empresas (`#servicios`) | blanco | Lista a 2 columnas con divisores y flecha | Las cinco líneas (spec 005) |
 | 5 | Lo que construimos para tu negocio | `--surface` | Tres tarjetas de imagen con título, texto y etiquetas | Líneas 3, 1 y 4; `hero-2`, `hero-3`, `hero-5` |
@@ -25,7 +25,7 @@ Implementación: `index.html` (`main`) y `styles.css` (bloques "Secciones" a "CT
 | ID | Requerimiento |
 |---|---|
 | RF-01 | Secciones con 104 px de relleno vertical en escritorio y 64 px en móvil (1000 px o menos). Titulares de sección entre 34 y 56 px, peso 700. |
-| RF-02 | El acento que Globant resuelve con verde lima se resuelve con la paleta propia: `--primary` (bloque de cifra), `--primary-soft` (botones sobre oscuro) y `--primary-on-dark` (palabras destacadas sobre oscuro). No se introducen colores nuevos. |
+| RF-02 | Los acentos usan solo la paleta de la spec 001: `--primary` (bloque de cifra), `--primary-soft` (botones sobre oscuro) y `--primary-on-dark` (palabras destacadas sobre oscuro). No se introducen colores nuevos. |
 | RF-03 | La lista de líneas (sección 4) pasa de una columna de tarjetas a dos columnas con divisores; conserva ícono, título, texto y flecha de la spec 005. En móvil vuelve a una columna. |
 | RF-04 | Las imágenes usan `height: auto` con `aspect-ratio`, porque el atributo `height` del HTML las estiraría. |
 | RF-05 | Sin JavaScript nuevo: solo CSS. |
@@ -36,4 +36,4 @@ Implementación: `index.html` (`main`) y `styles.css` (bloques "Secciones" a "CT
 - **Cifras.** "99.9 %" y "+100 proyectos" vienen del sitio anterior y no tienen respaldo documentado.
 - **Textos nuevos.** Titulares y párrafos de las secciones 2, 3, 5 y 6 son propuestas pendientes de aprobación del cliente.
 - **Hero.** Se agrandó (580 px, titular de 64 px) para acercarse a la referencia; la spec 002 aún cita las medidas anteriores.
-- **Logos de clientes.** Globant los usa; aquí no hay clientes publicables, por eso la sección 2 usa cifras.
+- **Logos de clientes.** No hay clientes publicables, por eso la sección 2 usa cifras en lugar de una franja de logos.

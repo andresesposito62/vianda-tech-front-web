@@ -24,7 +24,7 @@ Implementación: `index.html` (`ul.lines`) y `styles.css` (`.lines`, `.line`).
 
 | ID | Requerimiento |
 |---|---|
-| RF-01 | La sección muestra las cinco líneas, en el orden de la tabla, con ícono, título, texto y flecha. |gurade una imagen en descargas/estado chrome.JPG
+| RF-01 | La sección muestra las cinco líneas, en el orden de la tabla, con ícono, título, texto y flecha. |
 | RF-02 | En escritorio las tarjetas forman una lista vertical de una columna, a todo el ancho de la columna derecha de la sección, con 12 px entre ellas. Cada tarjeta es horizontal: ícono de 60 px a la izquierda, título (17 px) y texto (14 px) en el centro, y flecha a la derecha. Su alto depende del texto (hasta dos renglones) y no hay huecos vacíos.
 | RF-03 | En móvil y tablet (1000 px o menos) la lista es igual pero más compacta: ícono de 44 px y texto de 16 y 14 px. |
 | RF-04 | Los textos de las tarjetas pueden ocupar hasta cuatro renglones en escritorio. No se aplica el límite de dos renglones de la spec 002 (RF-14), que es solo para el carrusel. |

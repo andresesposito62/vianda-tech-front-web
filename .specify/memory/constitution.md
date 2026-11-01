@@ -7,7 +7,7 @@
 ## Restricciones técnicas
 
 - HTML y CSS puros; la menor cantidad posible de JavaScript y de frameworks.
-- Referencia de look and feel: `Landing tecnológica minimalista en azul.png` (azul, minimalista, tecnológico).
+- Referencia de look and feel: spec 006 (distribución de secciones) y spec 001 (paleta azul, minimalista, tecnológica).
 
 ## Metodología
 
