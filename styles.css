@@ -227,7 +227,7 @@ h1, h2, h3 { letter-spacing: -.025em; }
   .nav__inner { padding-bottom: 10px; }
   .logo img { height: 52px; }
   .btn { height: 44px; }
-  /* "Hablemos": botón flotante solo con el ícono de WhatsApp (56 px, zona del pulgar); se oculta con el menú abierto o cuando ya se ve la sección de contacto */
+  /* "Contáctanos": botón flotante solo con el ícono de WhatsApp (56 px, zona del pulgar); se oculta con el menú abierto o cuando ya se ve la sección de contacto */
   .btn--nav { position: fixed; z-index: 25; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom, 0px)); width: 56px; height: 56px; padding: 0; justify-content: center; border-radius: 50%; background: var(--primary-text); box-shadow: 0 8px 20px rgba(0,49,83,.4), 0 2px 6px rgba(0,0,14,.2); transition: opacity .25s, transform .25s, visibility 0s; }
   .btn--nav .btn__label, .btn--nav .ico-arrow { display: none; }
   .btn--nav .ico-wa { display: block; width: 30px; height: 30px; }
