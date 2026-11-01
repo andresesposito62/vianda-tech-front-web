@@ -273,8 +273,9 @@ h1, h2, h3 { letter-spacing: -.025em; }
   .icon { width: 44px; height: 44px; }
   .icon svg { width: 24px; height: 24px; }
   .studios { grid-template-columns: 1fr 1fr; grid-auto-rows: 240px; gap: 16px; margin-top: 32px; }
-  .story { display: block; }
-  .stat__head h3 { margin-top: 20px; }
+  .story { display: flex; flex-direction: column; }
+  .stat__head { order: -1; margin-bottom: 24px; }
+  .stat__head h3 { margin-top: 0; }
   .stat__head p { margin-top: 10px; }
   .connected .split { gap: 32px; }
   .story h3, .stat__head h3 { font-size: 24px; }
