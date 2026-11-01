@@ -345,3 +345,11 @@ h1, h2, h3 { letter-spacing: -.025em; }
   .value__list { grid-template-columns: 1fr; gap: 28px; }
   .value__list li { border-left: 0; padding-inline: 0; }
 }
+
+/* Banner de IA en tablet y móvil: se enmarca más alto y se enfoca en el robot y la pantalla (spec 006, RF-09) */
+@media (max-width: 1000px) {
+  .ai__shot img { aspect-ratio: 2.2 / 1; object-fit: cover; object-position: 30% 50%; }
+}
+@media (max-width: 640px) {
+  .ai__shot img { aspect-ratio: 3 / 2; object-position: 32% 50%; }
+}
