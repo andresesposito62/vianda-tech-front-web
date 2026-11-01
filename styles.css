@@ -109,54 +109,7 @@ h1, h2, h3 { letter-spacing: -.025em; }
 .card p { margin: 2px 0 0; padding-right: 0; font-size: 14px; line-height: 20px; color: var(--muted); }
 .card__arrow { position: absolute; right: 24px; top: 50%; margin-top: -8px; color: var(--ink); }
 
-/* Tarjetas de servicios: animaciones (spec 005). Entrada en cascada, íconos vivos, inclinación 3D con luz y panel holográfico con arco eléctrico */
-.card { overflow: visible; --mx: 50%; --my: 50%; transition: transform .15s ease-out, background .35s, border-color .35s, box-shadow .35s; }
-.card h3, .card p, .card__arrow { transition: color .35s; }
-.icon { position: relative; transition: background .35s, color .35s, box-shadow .35s, transform .35s; }
-.icon svg { overflow: visible; width: 30px; height: 30px; }
-.icon::before { content: ""; position: absolute; inset: 0; border-radius: 50%; border: 2px solid var(--primary); opacity: 0; animation: ring 2.6s ease-out infinite; animation-delay: calc(var(--i, 0) * .4s); }
-@keyframes ring { 0% { transform: scale(1); opacity: .5; } 70%, 100% { transform: scale(1.7); opacity: 0; } }
-.card::before { content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; opacity: 0; transition: opacity .25s; background: radial-gradient(260px circle at var(--mx) var(--my), rgba(77,163,255,.22), transparent 60%); }
-.card .arc { position: absolute; inset: 0; border-radius: inherit; border: 2px solid #5aa9ff; pointer-events: none; opacity: 0; transition: opacity .25s; filter: url(#electric) drop-shadow(0 0 5px #2f8cff) drop-shadow(0 0 14px rgba(47,140,255,.8)); }
-.card .sheen { position: absolute; inset: 0; border-radius: inherit; overflow: hidden; pointer-events: none; }
-.card .sheen::before { content: ""; position: absolute; top: -30%; bottom: -30%; left: -60%; width: 38%; transform: skewX(-20deg); background: linear-gradient(90deg, transparent, rgba(160,210,255,.28), transparent); opacity: 0; }
-.t-cursor { animation: blink 1s steps(2) infinite; }
-.c-dot { animation: typing 1.2s ease-in-out infinite; }
-.c-dot:nth-of-type(2) { animation-delay: .2s; } .c-dot:nth-of-type(3) { animation-delay: .4s; }
-.w-l { animation: brL 2.2s ease-in-out infinite; } .w-r { animation: brR 2.2s ease-in-out infinite; }
-.w-s { animation: slash 2.2s ease-in-out infinite; transform-origin: 12px 12px; }
-.m-body { animation: buzz 2.8s ease-in-out infinite; transform-origin: 12px 12px; }
-.a-star { animation: twinkle 3s ease-in-out infinite; transform-origin: 10px 10px; }
-.a-plus { animation: twinkle2 3s ease-in-out infinite; transform-origin: 19px 5px; }
-@keyframes blink { 50% { opacity: 0; } }
-@keyframes typing { 0%, 60%, 100% { transform: translateY(0); opacity: .4; } 30% { transform: translateY(-2.5px); opacity: 1; } }
-@keyframes brL { 0%, 100% { transform: translateX(0); } 50% { transform: translateX(-2.5px); } }
-@keyframes brR { 0%, 100% { transform: translateX(0); } 50% { transform: translateX(2.5px); } }
-@keyframes slash { 0%, 100% { transform: rotate(0); } 50% { transform: rotate(14deg); } }
-@keyframes buzz { 0%, 70%, 100% { transform: rotate(0); } 74% { transform: rotate(-9deg); } 78% { transform: rotate(9deg); } 82% { transform: rotate(-7deg); } 86% { transform: rotate(7deg); } 90% { transform: rotate(-3deg); } }
-@keyframes twinkle { 0%, 100% { transform: scale(1) rotate(0); } 50% { transform: scale(1.18) rotate(90deg); } }
-@keyframes twinkle2 { 0%, 100% { transform: scale(.6); opacity: .4; } 50% { transform: scale(1.2); opacity: 1; } }
-@keyframes sweep { from { left: -60%; } to { left: 140%; } }
-/* panel holográfico: con cursor al pasar por encima; en pantallas táctiles al tocar */
-.card:hover, .card:active { background: linear-gradient(160deg, #0f2a4d 0%, #071428 70%); border-color: transparent; box-shadow: 0 0 0 1px rgba(77,163,255,.35), 0 0 38px rgba(3,77,252,.45), 0 22px 40px -16px rgba(0,20,60,.7); }
-.card:hover h3, .card:active h3 { color: #fff; }
-.card:hover p, .card:active p { color: #b8cdee; }
-.card:hover .card__arrow, .card:active .card__arrow { color: #7fb2ff; }
-.card:hover .icon, .card:active .icon { background: rgba(77,163,255,.16); color: #7fd0ff; box-shadow: 0 0 18px rgba(77,163,255,.7); transform: scale(1.1); }
-.card:hover::before, .card:active::before { opacity: 1; }
-.card:hover .arc, .card:active .arc { opacity: 1; }
-.card:hover .sheen::before, .card:active .sheen::before { opacity: 1; animation: sweep 1.1s ease-out; }
-/* entrada en cascada al llegar a la sección (solo si hay JavaScript) */
-.fx-ready .card { opacity: 0; transform: translateY(46px) scale(.94) rotate(var(--r, 0deg)); }
-.fx-ready li:nth-child(odd) .card { --r: -1.5deg; } .fx-ready li:nth-child(even) .card { --r: 1.5deg; }
-.fx-ready.play .card { animation: cardIn .8s cubic-bezier(.2,.9,.25,1.15) forwards; animation-delay: calc(var(--i) * 110ms); }
-.fx-ready.done .card { opacity: 1; transform: none; animation: none; }
-@keyframes cardIn { 0% { opacity: 0; transform: translateY(46px) scale(.94) rotate(var(--r, 0deg)); } 60% { opacity: 1; } 100% { opacity: 1; transform: none; } }
-@media (prefers-reduced-motion: reduce) {
-  .fx-ready .card { opacity: 1; transform: none; animation: none !important; }
-  .icon::before, .icon *, .card .sheen::before { animation: none !important; }
-  .card .arc { display: none; }
-}
+.icon svg { width: 30px; height: 30px; }
 
 /* Franja de cifras */
 .stats { margin-top: 20px; height: 58px; background: var(--surface); }
