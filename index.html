@@ -196,68 +196,155 @@
   </header>
 
   <main>
-    <section class="container row row--services" id="servicios">
-      <div class="row__intro">
-        <p class="eyebrow">Nuestros servicios</p>
-        <h2>Soluciones digitales para empresas</h2>
+    <!-- 1. Introducción + cifras (equivale a la franja de clientes de la referencia) -->
+    <section class="intro" aria-labelledby="intro-title">
+      <div class="container">
+        <p class="intro__text" id="intro-title">Vianda Tech es una empresa de tecnología que desarrolla páginas web y software a la medida, y automatiza procesos con inteligencia artificial para hacer crecer tu negocio.</p>
       </div>
-      <ul class="services">
-        <li>
-          <a class="card" href="#">
-            <span class="icon"><svg width="26" height="26"><use href="#i-terminal"/></svg></span>
-            <h3>Software a Medida</h3>
-            <p>Creamos soluciones digitales para hacer más fácil cada tarea de tu negocio.</p>
-            <svg class="card__arrow" width="16" height="16"><use href="#i-arrow"/></svg>
-          </a>
-        </li>
-        <li>
-          <a class="card" href="#">
-            <span class="icon"><svg width="26" height="26"><use href="#i-chat"/></svg></span>
-            <h3>Asesoría Tecnológica</h3>
-            <p>Te ayudamos a tomar mejores decisiones tecnológicas para aprovechar al máximo tu inversión.</p>
-            <svg class="card__arrow" width="16" height="16"><use href="#i-arrow"/></svg>
-          </a>
-        </li>
-        <li>
-          <a class="card" href="#">
-            <span class="icon"><svg width="26" height="26"><use href="#i-code"/></svg></span>
-            <h3>Sitios Web Profesionales</h3>
-            <p>Diseñamos páginas web que resaltan lo mejor de tu negocio y te ayudan a atraer nuevos clientes.</p>
-            <svg class="card__arrow" width="16" height="16"><use href="#i-arrow"/></svg>
-          </a>
-        </li>
-        <li>
-          <a class="card" href="#">
-            <span class="icon"><svg width="26" height="26"><use href="#i-phone"/></svg></span>
-            <h3>Aplicaciones Móviles</h3>
-            <p>Creamos experiencias digitales para que tus clientes puedan acceder a tu negocio desde cualquier lugar.</p>
-            <svg class="card__arrow" width="16" height="16"><use href="#i-arrow"/></svg>
-          </a>
-        </li>
-        <li>
-          <a class="card" href="#">
-            <span class="icon"><svg width="26" height="26"><use href="#i-cpu"/></svg></span>
-            <h3>Automatización con IA</h3>
-            <p>Hacemos que la inteligencia artificial trabaje para tu negocio, simplificando tareas y mejorando la atención al cliente.</p>
-            <svg class="card__arrow" width="16" height="16"><use href="#i-arrow"/></svg>
-          </a>
-        </li>
-      </ul>
-    </section>
-
-    <section class="stats" aria-label="Cifras">
-      <ul class="container">
-        <li><svg width="32" height="32"><use href="#i-rocket"/></svg><div><strong>+100</strong>Proyectos entregados</div></li>
+      <ul class="container stats" aria-label="Cifras">
         <li><svg width="32" height="32"><use href="#i-shield"/></svg><div><strong>99.9%</strong>Disponibilidad</div></li>
         <li><svg width="32" height="32"><use href="#i-zap"/></svg><div><strong>Mayor eficiencia</strong>para tu negocio</div></li>
-        <li><svg width="32" height="32"><use href="#i-headset"/></svg><div class="stats__plain">Soporte experto</div></li>
+        <li><svg width="32" height="32"><use href="#i-headset"/></svg><div><strong>Soporte experto</strong>cuando lo necesites</div></li>
       </ul>
     </section>
 
+    <!-- 2. Sección oscura: Automatización con IA -->
+    <section class="section section--dark ai" id="ia" aria-labelledby="ai-title">
+      <div class="container split">
+        <div>
+          <h2 id="ai-title">IA que trabaja <em>por tu negocio.</em></h2>
+          <p class="lead">Hacemos que la inteligencia artificial simplifique tareas y mejore la atención al cliente, con el acompañamiento de un equipo experto.</p>
+        </div>
+        <ul class="ai__list">
+          <li><h3>Automatización con IA</h3><p>Hacemos que la inteligencia artificial trabaje para tu negocio, simplificando tareas y mejorando la atención al cliente.</p></li>
+          <li><h3>Asesoría Tecnológica</h3><p>Te ayudamos a tomar mejores decisiones tecnológicas para aprovechar al máximo tu inversión.</p></li>
+        </ul>
+      </div>
+      <figure class="container ai__frame">
+        <div class="ai__shot"><img src="assets/hero-6.jpg" width="1272" height="724" alt="Código y chip de inteligencia artificial sobre una pantalla" loading="lazy"></div>
+        <figcaption>
+          <span>Tu idea, nuestro código.</span>
+          <a class="btn btn--soft" href="#contacto">Automatiza tu negocio <svg width="14" height="14"><use href="#i-arrow"/></svg></a>
+        </figcaption>
+      </figure>
+    </section>
+
+    <!-- 3. Líneas de negocio: lista con divisores (spec 005) -->
+    <section class="section" id="servicios" aria-labelledby="lines-title">
+      <div class="container split split--head">
+        <div>
+          <p class="eyebrow">Nuestros servicios</p>
+          <h2 id="lines-title">Soluciones digitales para empresas</h2>
+        </div>
+        <p class="lead">Cinco líneas de negocio para que tu empresa tenga presencia, herramientas y procesos a la altura de lo que quiere lograr.</p>
+      </div>
+      <ul class="container lines">
+        <li>
+          <a class="line" href="#">
+            <span class="icon"><svg width="26" height="26"><use href="#i-terminal"/></svg></span>
+            <span class="line__text"><h3>Software a Medida</h3><p>Creamos soluciones digitales para hacer más fácil cada tarea de tu negocio.</p></span>
+            <svg class="line__arrow" width="18" height="18"><use href="#i-arrow"/></svg>
+          </a>
+        </li>
+        <li>
+          <a class="line" href="#">
+            <span class="icon"><svg width="26" height="26"><use href="#i-chat"/></svg></span>
+            <span class="line__text"><h3>Asesoría Tecnológica</h3><p>Te ayudamos a tomar mejores decisiones tecnológicas para aprovechar al máximo tu inversión.</p></span>
+            <svg class="line__arrow" width="18" height="18"><use href="#i-arrow"/></svg>
+          </a>
+        </li>
+        <li>
+          <a class="line" href="#">
+            <span class="icon"><svg width="26" height="26"><use href="#i-code"/></svg></span>
+            <span class="line__text"><h3>Sitios Web Profesionales</h3><p>Diseñamos páginas web que resaltan lo mejor de tu negocio y te ayudan a atraer nuevos clientes.</p></span>
+            <svg class="line__arrow" width="18" height="18"><use href="#i-arrow"/></svg>
+          </a>
+        </li>
+        <li>
+          <a class="line" href="#">
+            <span class="icon"><svg width="26" height="26"><use href="#i-phone"/></svg></span>
+            <span class="line__text"><h3>Aplicaciones Móviles</h3><p>Creamos experiencias digitales para que tus clientes puedan acceder a tu negocio desde cualquier lugar.</p></span>
+            <svg class="line__arrow" width="18" height="18"><use href="#i-arrow"/></svg>
+          </a>
+        </li>
+        <li>
+          <a class="line" href="#">
+            <span class="icon"><svg width="26" height="26"><use href="#i-cpu"/></svg></span>
+            <span class="line__text"><h3>Automatización con IA</h3><p>Hacemos que la inteligencia artificial trabaje para tu negocio, simplificando tareas y mejorando la atención al cliente.</p></span>
+            <svg class="line__arrow" width="18" height="18"><use href="#i-arrow"/></svg>
+          </a>
+        </li>
+      </ul>
+      <p class="container more"><a class="link" href="#contacto">Hablemos de tu proyecto <svg width="16" height="16"><use href="#i-arrow"/></svg></a></p>
+    </section>
+
+    <!-- 4. Tres líneas destacadas con imagen -->
+    <section class="section section--tint" aria-labelledby="studios-title">
+      <div class="container">
+        <h2 id="studios-title" class="h2--wide">Lo que construimos <em>para tu negocio.</em></h2>
+        <ul class="studios">
+          <li>
+            <a class="studio" href="#">
+              <img src="assets/hero-2.jpg" width="1612" height="809" alt="Sitio web de Vianda Tech en un portátil" loading="lazy">
+              <h3>Sitios Web Profesionales</h3>
+              <p>Diseñamos páginas web que resaltan lo mejor de tu negocio.</p>
+              <span class="tags">Páginas web · Diseño profesional · Nuevos clientes</span>
+            </a>
+          </li>
+          <li>
+            <a class="studio" href="#">
+              <img src="assets/hero-3.jpg" width="1471" height="724" alt="Desarrolladora trabajando en software a la medida" loading="lazy">
+              <h3>Software a Medida</h3>
+              <p>Soluciones digitales que hacen más fácil cada tarea de tu negocio.</p>
+              <span class="tags">Soluciones digitales · Tareas del negocio · Procesos</span>
+            </a>
+          </li>
+          <li>
+            <a class="studio" href="#">
+              <img src="assets/hero-5.jpg" width="1612" height="724" alt="Mujer usando una aplicación móvil de compras" loading="lazy">
+              <h3>Aplicaciones Móviles</h3>
+              <p>Experiencias digitales para que tus clientes lleguen a ti desde cualquier lugar.</p>
+              <span class="tags">Apps móviles · Experiencia de usuario · Clientes</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 5. Resultados: cuadrícula asimétrica -->
+    <section class="section" aria-labelledby="results-title">
+      <div class="container head-row">
+        <h2 id="results-title" class="h2--wide">De las ideas <em>a los resultados.</em></h2>
+        <a class="link" href="#contacto">Hablemos <svg width="16" height="16"><use href="#i-arrow"/></svg></a>
+      </div>
+      <div class="container stories">
+        <a class="story story--big" href="#contacto">
+          <img src="assets/hero-1.jpg" width="892" height="908" alt="Dos personas revisando una propuesta en un portátil" loading="lazy">
+          <span class="story__label">Vianda Tech</span>
+          <h3>Tecnología que impulsa tu negocio, con un equipo que te acompaña en cada paso.</h3>
+        </a>
+        <a class="story" href="#servicios">
+          <img src="assets/hero-4.jpg" width="1372" height="724" alt="Asesor explicando una solución tecnológica a una clienta" loading="lazy">
+          <span class="story__label">Asesoría Tecnológica</span>
+          <h3>Decisiones tecnológicas que cuidan tu inversión.</h3>
+        </a>
+        <div class="story story--stat">
+          <svg width="32" height="32" aria-hidden="true"><use href="#i-rocket"/></svg>
+          <strong>+100</strong>
+          <span>Proyectos entregados</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Llamada a la acción -->
     <section class="cta" id="contacto">
-      <h2>¿Listo para llevar tu empresa<br><em>al siguiente nivel?</em></h2>
-      <p>Hablemos sobre tu proyecto y descubre cómo la tecnología puede impulsar tu crecimiento.</p>
-      <a class="btn" href="mailto:contacto@viandatech.com">Contactar ahora <svg width="14" height="14"><use href="#i-arrow"/></svg></a>
+      <div class="container cta__inner">
+        <h2>¿Listo para llevar tu empresa <em>al siguiente nivel?</em></h2>
+        <div>
+          <p>Hablemos sobre tu proyecto y descubre cómo la tecnología puede impulsar tu crecimiento.</p>
+          <a class="btn btn--soft" href="mailto:contacto@viandatech.com">Contactar ahora <svg width="14" height="14"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
     </section>
   </main>
 
