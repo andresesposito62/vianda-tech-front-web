@@ -125,6 +125,7 @@ h1, h2, h3 { letter-spacing: -.025em; }
 .ai { background: radial-gradient(900px 420px at 100% 0%, rgba(3,77,252,.28), transparent 70%), var(--dark); }
 .ai__top { grid-template-columns: 1.05fr 1fr; gap: 0; align-items: center; }
 .ai__top > div:first-child { padding-right: 56px; border-right: 1px solid rgba(255,255,255,.14); }
+.ai h2 em, .section--dark.ai h2 em { color: var(--primary-soft); }
 .ai .lead { margin-top: 20px; max-width: 420px; }
 .ai .lead strong { color: #fff; font-weight: 700; }
 .ai__list { display: grid; gap: 16px; padding-left: 56px; }
