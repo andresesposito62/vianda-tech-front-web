@@ -6,9 +6,9 @@
 
 Vianda Tech organiza su oferta en cinco líneas de negocio. Se presentan como tarjetas en la sección "Soluciones digitales para empresas" (`#servicios`, bajo el rótulo "Nuestros servicios"), apiladas en una sola columna vertical, en escritorio y en móvil. Esta spec es la fuente de verdad de los nombres y textos de las líneas: cualquier otra sección (carrusel, SEO, menú) debe ser coherente con ella.
 
-> **Actualización 2026-11-01 (spec 006):** la presentación pasó de tarjetas en una columna a una lista de dos columnas con divisores (`ul.lines`, `.line`). Los nombres, textos e íconos de abajo siguen vigentes; RF-02 y RF-03 quedan reemplazados por la spec 006 (RF-03).
+> **Actualización 2026-11-01 (spec 006):** la lista de líneas (`ul.lines`) se eliminó junto con la sección "Nuestros servicios". Los nombres, textos e íconos de abajo siguen vigentes como fuente de verdad; las líneas se muestran ahora en la galería de imágenes de la spec 006 (sección 5, ancla `#servicios`), en el carrusel y en el submenú. RF-01 a RF-03 (tarjetas con ícono, título, texto y flecha) quedan sin implementación visible.
 
-Implementación: `index.html` (`ul.lines`) y `styles.css` (`.lines`, `.line`).
+Implementación: galería `ul.studios` en `index.html` y `styles.css`.
 
 ## Líneas de negocio
 
