@@ -294,3 +294,26 @@ h1, h2, h3 { letter-spacing: -.025em; }
   .hero__photo--4 { object-position: 50% 40%; -webkit-mask-image: linear-gradient(90deg, #000 90%, transparent 100%); mask-image: linear-gradient(90deg, #000 90%, transparent 100%); }
   .hero__photo--5 { object-position: 50% 30%; -webkit-mask-image: linear-gradient(90deg, #000 92%, transparent 100%); mask-image: linear-gradient(90deg, #000 92%, transparent 100%); }
 }
+
+/* Página interna "Quiénes somos" (spec 007) */
+.page-head { background: linear-gradient(90deg, var(--hero) 0%, #e8eef9 55%, #dfe7f5 100%); }
+.page-head__body { padding-block: 72px 88px; }
+.page-head h1 { font-size: clamp(44px, 6vw, 80px); line-height: 1.02; font-weight: 700; letter-spacing: -.04em; }
+.page-head h1 em { color: var(--accent); }
+.page-head .eyebrow { margin-bottom: 18px; }
+.section h2 em { color: var(--accent); }
+.lead--lg { font-size: clamp(18px, 1.7vw, 22px); line-height: 1.6; color: var(--ink); }
+.split--cards { gap: 24px; align-items: stretch; }
+.pillar { padding: 40px; border-radius: 14px; background: #fff; border: 1px solid var(--line); }
+.pillar h2 { margin-bottom: 18px; font-size: clamp(28px, 3vw, 40px); }
+.pillar p:not(.eyebrow) { font-size: 17px; line-height: 1.65; color: var(--muted); }
+.values { display: grid; grid-template-columns: repeat(3, 1fr); column-gap: 48px; margin-top: 48px; border-top: 1px solid var(--line); counter-reset: v; }
+.values li { counter-increment: v; display: flex; align-items: baseline; gap: 18px; padding-block: 28px; border-bottom: 1px solid var(--line); font-size: 24px; font-weight: 700; letter-spacing: -.02em; }
+.values li::before { content: "0" counter(v); font-size: 13px; font-weight: 600; letter-spacing: 0; color: var(--muted); }
+.nav__links [aria-current="page"], .footer nav [aria-current="page"] { font-weight: 700; color: var(--primary-text); }
+@media (max-width: 1000px) {
+  .page-head__body { padding-block: 32px 48px; }
+  .pillar { padding: 28px; }
+  .values { grid-template-columns: 1fr; }
+  .values li { font-size: 20px; padding-block: 20px; }
+}

@@ -4,7 +4,7 @@
 
 ## Resumen
 
-En móvil y tablet (1000 px o menos) la navegación principal se muestra en un menú hamburguesa que abre un cajón lateral. La fila de enlaces del pie de página (Servicios, Nosotros, Blog, Contacto) deja de mostrarse en esas pantallas, porque el menú la reemplaza. En escritorio no cambia nada.
+En móvil y tablet (1000 px o menos) la navegación principal se muestra en un menú hamburguesa que abre un cajón lateral. La fila de enlaces del pie de página (Servicios, Quiénes somos, Blog, Contacto) deja de mostrarse en esas pantallas, porque el menú la reemplaza. En escritorio no cambia nada.
 
 Implementación: `index.html` (`.burger`, `#menu`), `styles.css` (secciones "Menú hamburguesa" y "Responsive") y `script.js` (bloque "Menú hamburguesa").
 
@@ -13,7 +13,7 @@ Implementación: `index.html` (`.burger`, `#menu`), `styles.css` (secciones "Men
 | ID | Requerimiento |
 |---|---|
 | RF-01 | En 1000 px o menos, la barra superior muestra el logotipo y, a la derecha, un botón de hamburguesa (tres rayas). En escritorio el botón está oculto. |
-| RF-02 | Al pulsar el botón se abre un **cajón lateral** que entra desde la derecha (86 % del ancho, máximo 360 px) y ocupa todo el alto de la pantalla, con un fondo oscuro detrás. Contiene: Servicios (con las cinco líneas de negocio de la spec 005 debajo, siempre visibles), Nosotros, Blog y Contacto, y al pie un botón "Hablemos" a ancho completo, el teléfono y el correo. |
+| RF-02 | Al pulsar el botón se abre un **cajón lateral** que entra desde la derecha (86 % del ancho, máximo 360 px) y ocupa todo el alto de la pantalla, con un fondo oscuro detrás. Contiene: Servicios (con las cinco líneas de negocio de la spec 005 debajo, siempre visibles), Quiénes somos, Blog y Contacto, y al pie un botón "Hablemos" a ancho completo, el teléfono y el correo. |
 | RF-03 | El cajón se cierra al elegir un enlace, al tocar el fondo oscuro, al pulsar el botón de nuevo y con la tecla Escape (que devuelve el foco al botón). Mientras está abierto, la página de fondo no se desplaza. |
 | RF-04 | Con el cajón abierto, las tres rayas se convierten en una X. |
 | RF-05 | "Servicios" es un enlace a `#servicios` y las cinco líneas aparecen como sublista con tipografía menor, sin acordeón ni flecha. |
