@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Vianda Tech organiza su oferta en cinco líneas de negocio. Se presentan como tarjetas en la sección "Soluciones digitales para empresas" (`#servicios`, bajo el rótulo "Nuestros servicios"), en dos filas (tres y dos) en escritorio y apiladas en móvil. Esta spec es la fuente de verdad de los nombres y textos de las líneas: cualquier otra sección (carrusel, SEO, menú) debe ser coherente con ella.
+Vianda Tech organiza su oferta en cinco líneas de negocio. Se presentan como tarjetas en la sección "Soluciones digitales para empresas" (`#servicios`, bajo el rótulo "Nuestros servicios"), apiladas en una sola columna vertical, en escritorio y en móvil. Esta spec es la fuente de verdad de los nombres y textos de las líneas: cualquier otra sección (carrusel, SEO, menú) debe ser coherente con ella.
 
 Implementación: `index.html` (`ul.services`) y `styles.css` (`.services`, `.card`).
 
@@ -23,8 +23,8 @@ Implementación: `index.html` (`ul.services`) y `styles.css` (`.services`, `.car
 | ID | Requerimiento |
 |---|---|
 | RF-01 | La sección muestra las cinco líneas, en el orden de la tabla, con ícono, título, texto y flecha. |
-| RF-02 | En escritorio las tarjetas forman dos filas: tres arriba y dos abajo. Su alto no es fijo: mínimo 138 px, crece con el texto y las de una misma fila se igualan. |
-| RF-03 | En móvil y tablet (1000 px o menos) las tarjetas se apilan, con el ícono a la izquierda y el texto a la derecha. |
+| RF-02 | En escritorio las tarjetas forman una lista vertical de una columna, a todo el ancho de la columna derecha de la sección, con 12 px entre ellas. Cada tarjeta es horizontal: ícono de 60 px a la izquierda, título (17 px) y texto (14 px) en el centro, y flecha a la derecha. Su alto depende del texto (hasta dos renglones) y no hay huecos vacíos.
+| RF-03 | En móvil y tablet (1000 px o menos) la lista es igual pero más compacta: ícono de 44 px y texto de 16 y 14 px. |
 | RF-04 | Los textos de las tarjetas pueden ocupar hasta cuatro renglones en escritorio. No se aplica el límite de dos renglones de la spec 002 (RF-14), que es solo para el carrusel. |
 | RF-05 | Cada línea tiene un ícono propio, de trazo de 2 px y sin rellenos, para que se vea nítido a 26 px (spec 001). |
 | RF-06 | Los nombres de las líneas se usan tal cual en el menú, el SEO y el carrusel cuando se haga referencia a ellas. |
@@ -40,6 +40,7 @@ Implementación: `index.html` (`ul.services`) y `styles.css` (`.services`, `.car
 - **Integraciones.** ✅ Resuelto: no es una línea de negocio y no se ofrece como servicio independiente. Consecuencias resueltas: la diapositiva sobre integraciones se reemplazó, el submenú "Servicios" del menú de escritorio lista las seis líneas y se eliminó el ícono `i-puzzle`.
 - **Carrusel.** ✅ Resuelto: las diapositivas coinciden con las líneas de negocio.
 - **Renovación de Sistemas.** ✅ Eliminada como línea de negocio el 2026-10-31: se quitaron su tarjeta, su entrada del submenú, la diapositiva 7 del carrusel y el ícono `i-refresh`.
+- **Animaciones.** Se probaron y descartaron dos propuestas (el 2026-10-31): entrada en cascada con íconos animados, inclinación 3D y panel holográfico con arco eléctrico; y tres variantes sobrias (relleno lateral, ícono que se dibuja, foco). Las tarjetas quedan sin animación, solo con el cambio de borde y la elevación de 2 px al pasar el cursor. Pendiente definir otra propuesta.
 - **Páginas por línea.** Cada línea merece su propia página con `h1`, `title` y `description` para SEO.
 - **Íconos del carrusel.** ✅ Resuelto: usan los mismos que las tarjetas. `i-puzzle` ya no se usa en ningún lado y se puede eliminar.
 - **Textos.** Aprobados por el cliente el 2026-10-31 en la conversación de diseño; no hay versión validada con terceros.
