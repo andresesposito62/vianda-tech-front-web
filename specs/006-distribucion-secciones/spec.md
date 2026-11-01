@@ -13,7 +13,7 @@ Implementación: `index.html` (`main`) y `styles.css` (bloques "Secciones" a "CT
 | # | Sección | Fondo | Componente (referencia) | Contenido propio |
 |---|---|---|---|---|
 | 1 | Hero con carrusel (spec 002) | `--hero` | Titular grande + CTA en píldora | Seis diapositivas, `hero-1` a `hero-6` |
-| 2 | Introducción + cifras | blanco | Párrafo centrado + franja de cifras | Descripción de la empresa; 99.9 %, mayor eficiencia, soporte experto |
+| 2 | Introducción + cifras | blanco | Párrafo centrado + franja de cifras | «Impulsamos la transformación de tu negocio con soluciones digitales innovadoras que simplifican procesos, conectan ideas con tecnología y potencian tus resultados.» (texto del cliente); 99.9 %, mayor eficiencia, soporte experto |
 | 3 | IA que trabaja por tu negocio (`#ia`) | `--dark` | Título + dos ítems con divisor; marco de producto con CTA | Líneas 5 y 2; `hero-6` |
 | 4 | Soluciones digitales para empresas (`#servicios`) | blanco | Lista a 2 columnas con divisores y flecha | Las cinco líneas (spec 005) |
 | 5 | Lo que construimos para tu negocio | `--surface` | Tres tarjetas de imagen con título, texto y etiquetas | Líneas 3, 1 y 4; `hero-2`, `hero-3`, `hero-5` |
