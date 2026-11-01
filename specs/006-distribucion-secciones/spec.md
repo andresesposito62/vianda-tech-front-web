@@ -16,7 +16,7 @@ Implementación: `index.html` (`main`) y `styles.css` (bloques "Secciones" a "CT
 | 2 | Introducción + cifras | blanco | Párrafo centrado + franja de cifras | «Impulsamos la transformación de tu negocio con soluciones digitales innovadoras que simplifican procesos, conectan ideas con tecnología y potencian tus resultados.» (texto del cliente); 99.9 %, mayor eficiencia, soporte experto |
 | 3 | IA que trabaja por tu negocio (`#ia`) | `--dark` | Título + dos ítems con divisor; marco de producto con CTA | Líneas 5 y 2; `hero-6` |
 | 4 | Soluciones digitales para empresas (`#servicios`) | blanco | Lista a 2 columnas con divisores y flecha | Las cinco líneas (spec 005) |
-| 5 | Lo que construimos para tu negocio | `--surface` | Tres tarjetas de imagen con título, texto y etiquetas | Líneas 3, 1 y 4; `hero-2`, `hero-3`, `hero-5` |
+| 5 | Lo que construimos para tu negocio | `--surface` | Galería bento de cinco mosaicos de imagen con el nombre de la línea sobre un degradado oscuro y una flecha: fila 1 con uno destacado de doble ancho y uno sencillo; fila 2 con tres iguales (300 px de alto) | Las cinco líneas, en este orden: 3 (`hero-2`), 1 (`hero-3`), 4 (`hero-5`), 2 (`hero-4`), 5 (`hero-6`) |
 | 6 | De las ideas a los resultados | blanco | Cuadrícula asimétrica: tarjeta grande, tarjeta pequeña y bloque de cifra | `hero-1`, `hero-4`; bloque `--primary` con "+100 proyectos" |
 | 7 | CTA (`#contacto`) | `--dark` | Titular a la izquierda, texto y botón a la derecha | Texto y correo existentes |
 
@@ -29,7 +29,8 @@ Implementación: `index.html` (`main`) y `styles.css` (bloques "Secciones" a "CT
 | RF-03 | La lista de líneas (sección 4) pasa de una columna de tarjetas a dos columnas con divisores; conserva ícono, título, texto y flecha de la spec 005. En móvil vuelve a una columna. |
 | RF-04 | Las imágenes usan `height: auto` con `aspect-ratio`, porque el atributo `height` del HTML las estiraría. |
 | RF-05 | Sin JavaScript nuevo: solo CSS. |
-| RF-06 | Las etiquetas de las tarjetas (sección 5) se derivan de los textos aprobados de cada línea; no afirman tecnologías ni clientes. |
+| RF-06 | La sección 5 no repite los textos de la lista de la sección 4: es una galería visual con solo el nombre de la línea. Las imágenes llevan `alt` vacío porque el nombre ya está en el enlace. |
+| RF-07 | Sección 5: cada mosaico completo es un enlace, con flecha en círculo (`--primary-soft`) que se desplaza al pasar el cursor, zoom suave de la imagen (desactivado con "reducir movimiento") y contorno visible al enfocar con teclado. El texto blanco va sobre un degradado de `--dark` para mantener el contraste. En 1000 px o menos son 2 columnas (el destacado ocupa las dos, 240 px de alto); en 640 px o menos, una columna de 200 px. |
 
 ## Puntos abiertos
 

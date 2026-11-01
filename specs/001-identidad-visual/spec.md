@@ -17,8 +17,8 @@ Todos los valores se muestrearon de los píxeles de las imágenes, no se estimar
 
 | Token | Hex | Uso en la landing |
 |---|---|---|
-| `--primary` | `#034DFC` | Fondo de botones ("Hablemos", "Descubrir más", "Contactar ahora"). Promedio de las tres muestras (`#0869FC`, `#0240FC`, `#003EFC`) |
-| `--primary-text` | `#003153` | Botones "Hablemos" y "Descubrir más" |
+| `--primary` | `#034DFC` | Fondo de botones ("Contáctanos", "Descubrir más", "Contactar ahora"). Promedio de las tres muestras (`#0869FC`, `#0240FC`, `#003EFC`) |
+| `--primary-text` | `#003153` | Botones "Contáctanos" y "Descubrir más" |
 | `--accent` | `#165A7A` | Palabra "negocio" del titular. Azul petróleo, ~7:1 sobre el fondo del hero |
 | `--primary-on-dark` | `#007BFF` | "al siguiente nivel?" sobre el fondo oscuro del CTA |
 | `--primary-soft` | `#DCE9FE` | Círculo detrás de los íconos de servicios |

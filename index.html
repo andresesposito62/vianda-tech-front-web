@@ -7,7 +7,8 @@
   <meta name="description" content="Desarrollo de software y páginas web para tu negocio. Innovación e IA para automatizar procesos y hacer crecer tu empresa.">
   <meta name="theme-color" content="#003153">
   <link rel="canonical" href="https://viandatech.com/">
-  <link rel="icon" type="image/png" href="assets/logo-mark.png">
+  <link rel="icon" type="image/png" href="assets/logo-mark.png" media="(prefers-color-scheme: light)">
+  <link rel="icon" type="image/png" href="assets/logo-mark-dark.png" media="(prefers-color-scheme: dark)">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Vianda Tech">
   <meta property="og:locale" content="es_CO">
@@ -95,10 +96,10 @@
           <li><a href="quienes-somos.html">Quiénes somos</a></li>
           <li><a href="#blog">Blog</a></li>
           <li><a href="#contacto">Contacto</a></li>
-          <li class="nav__cta"><a class="btn btn--deep" href="https://wa.me/573223064409?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios" target="_blank" rel="noopener">Hablemos <svg width="14" height="14"><use href="#i-arrow"/></svg></a></li>
+          <li class="nav__cta"><a class="btn btn--deep" href="https://wa.me/573223064409?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios" target="_blank" rel="noopener">Contáctanos <svg width="14" height="14"><use href="#i-arrow"/></svg></a></li>
           <li class="nav__contact"><a href="tel:+573223064409">+57 322 306 4409</a><a href="mailto:contacto@viandatech.com">contacto@viandatech.com</a></li>
         </ul>
-        <a class="btn btn--deep btn--nav" href="https://wa.me/573223064409?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios" target="_blank" rel="noopener" aria-label="Hablemos por WhatsApp"><span class="btn__label">Hablemos</span> <svg class="ico-arrow" width="12" height="12"><use href="#i-arrow"/></svg><svg class="ico-wa" width="28" height="28" aria-hidden="true"><use href="#i-whatsapp"/></svg></a>
+        <a class="btn btn--deep btn--nav" href="https://wa.me/573223064409?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios" target="_blank" rel="noopener" aria-label="Contáctanos por WhatsApp"><span class="btn__label">Contáctanos</span> <svg class="ico-arrow" width="12" height="12"><use href="#i-arrow"/></svg><svg class="ico-wa" width="28" height="28" aria-hidden="true"><use href="#i-whatsapp"/></svg></a>
         <button class="burger" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
           <span></span><span></span><span></span>
         </button>
@@ -116,7 +117,6 @@
         <article class="hero__slide">
           <div class="container hero__body">
             <h1>Tecnología que<br>impulsa tu <em>negocio</em></h1>
-            <p>Creamos páginas web modernas que dan vida a tus ideas y conectan tu negocio con el mundo digital.</p>
             <div class="hero__actions">
               <a class="btn btn--deep" href="#servicios">Descubrir más <svg width="14" height="14"><use href="#i-arrow"/></svg></a>
             </div>
@@ -129,7 +129,7 @@
         <article class="hero__slide">
           <div class="container hero__body">
             <h2>Páginas web que<br>trabajan por <em>ti</em></h2>
-            <p>Diseñamos páginas web que resaltan lo mejor de tu negocio y te ayudan a atraer nuevos clientes.</p>
+            <p>Creamos páginas web modernas que dan vida a tus ideas y conectan tu negocio con el mundo digital.</p>
             <div class="hero__actions">
               <a class="btn btn--deep" href="#servicios">Descubrir más <svg width="14" height="14"><use href="#i-arrow"/></svg></a>
             </div>
@@ -283,28 +283,34 @@
       <div class="container">
         <h2 id="studios-title" class="h2--wide">Lo que construimos <em>para tu negocio.</em></h2>
         <ul class="studios">
-          <li>
+          <li class="studio-feature">
             <a class="studio" href="#">
-              <img src="assets/hero-2.jpg" width="1612" height="809" alt="Sitio web de Vianda Tech en un portátil" loading="lazy">
-              <h3>Sitios Web Profesionales</h3>
-              <p>Diseñamos páginas web que resaltan lo mejor de tu negocio.</p>
-              <span class="tags">Páginas web · Diseño profesional · Nuevos clientes</span>
+              <img src="assets/hero-2.jpg" width="1612" height="809" alt="" loading="lazy">
+              <span class="studio__label"><span>Sitios Web Profesionales</span><svg width="18" height="18" aria-hidden="true"><use href="#i-arrow"/></svg></span>
             </a>
           </li>
           <li>
-            <a class="studio" href="#">
-              <img src="assets/hero-3.jpg" width="1471" height="724" alt="Desarrolladora trabajando en software a la medida" loading="lazy">
-              <h3>Software a Medida</h3>
-              <p>Soluciones digitales que hacen más fácil cada tarea de tu negocio.</p>
-              <span class="tags">Soluciones digitales · Tareas del negocio · Procesos</span>
+            <a class="studio studio--software" href="#">
+              <img src="assets/hero-3.jpg" width="1471" height="724" alt="" loading="lazy">
+              <span class="studio__label"><span>Software a Medida</span><svg width="18" height="18" aria-hidden="true"><use href="#i-arrow"/></svg></span>
             </a>
           </li>
           <li>
-            <a class="studio" href="#">
-              <img src="assets/hero-5.jpg" width="1612" height="724" alt="Mujer usando una aplicación móvil de compras" loading="lazy">
-              <h3>Aplicaciones Móviles</h3>
-              <p>Experiencias digitales para que tus clientes lleguen a ti desde cualquier lugar.</p>
-              <span class="tags">Apps móviles · Experiencia de usuario · Clientes</span>
+            <a class="studio studio--mobile" href="#">
+              <img src="assets/hero-5.jpg" width="1612" height="724" alt="" loading="lazy">
+              <span class="studio__label"><span>Aplicaciones Móviles</span><svg width="18" height="18" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+            </a>
+          </li>
+          <li>
+            <a class="studio studio--advice" href="#">
+              <img src="assets/hero-4.jpg" width="1372" height="724" alt="" loading="lazy">
+              <span class="studio__label"><span>Asesoría Tecnológica</span><svg width="18" height="18" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+            </a>
+          </li>
+          <li>
+            <a class="studio studio--ai" href="#">
+              <img src="assets/hero-6.jpg" width="1272" height="724" alt="" loading="lazy">
+              <span class="studio__label"><span>Automatización con IA</span><svg width="18" height="18" aria-hidden="true"><use href="#i-arrow"/></svg></span>
             </a>
           </li>
         </ul>

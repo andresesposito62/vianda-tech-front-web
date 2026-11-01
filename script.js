@@ -181,7 +181,7 @@
   sync();
 })();
 
-// Botón flotante "Hablemos" (móvil): se oculta mientras la sección de contacto está en pantalla, porque sería redundante.
+// Botón flotante "Contáctanos" (móvil): se oculta mientras la sección de contacto está en pantalla, porque sería redundante.
 (() => {
   const fab = document.querySelector('.btn--nav');
   const cta = document.getElementById('contacto');
