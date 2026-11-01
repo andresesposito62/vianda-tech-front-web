@@ -389,3 +389,7 @@ h1, h2, h3 { letter-spacing: -.025em; }
 .footer__phone:hover strong { text-decoration: underline; }
 .footer__phone:focus-visible { outline: 3px solid var(--primary-text); outline-offset: 3px; }
 @media (max-width: 1000px) { .footer__phone { text-align: center; margin-top: 8px; padding-block: 12px; font-size: 16px; } .footer small { margin-top: 0; } }
+
+/* Al llegar por ancla (botón «Descubrir más», menú), se recorta el relleno superior de la sección para que el título quede cerca del borde y no haya un vacío arriba (spec 006, RF-15) */
+#servicios { scroll-margin-top: -64px; }
+@media (max-width: 1000px) { #servicios { scroll-margin-top: -32px; } }
