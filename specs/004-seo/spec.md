@@ -15,7 +15,7 @@ Implementación: `index.html` (`<head>` y estructura), archivos de raíz (`robot
 | `lang="es"`, `<title>`, `meta description`, `viewport` | Presentes |
 | Un solo `h1` (primera diapositiva del carrusel), el resto `h2` | Cumple |
 | `alt` en el logotipo; íconos decorativos con `aria-hidden` | Cumple |
-| URL canónica, Open Graph, Twitter Card, favicon, `theme-color` | Presentes (favicon provisional con `logo-mark.png`) |
+| URL canónica, Open Graph, Twitter Card, favicon, `theme-color` | Presentes (favicon con dos variantes según el tema del navegador: `logo-mark.png` (oscuro, para pestañas claras) y `logo-mark-dark.png` (claro, para pestañas oscuras)) |
 | Datos estructurados (`ProfessionalService`: correo, teléfono, dirección y área de servicio) | Presentes |
 | `robots.txt` y `sitemap.xml` | Presentes (solo la portada) |
 | Enlaces con destino real (varios usan `href="#"`) | Pendiente |
