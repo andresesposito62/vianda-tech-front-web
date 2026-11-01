@@ -167,6 +167,7 @@ h1, h2, h3 { letter-spacing: -.025em; }
 .story--big img { aspect-ratio: 4 / 4.2; object-position: 50% 30%; }
 .story:not(.story--big):not(.story--stat) img { aspect-ratio: 16 / 9; }
 .story__label { display: block; margin-top: 14px; font-size: 13px; color: var(--muted); }
+.story img + h3 { margin-top: 16px; }
 .story h3 { margin-top: 6px; font-size: 20px; line-height: 1.3; font-weight: 600; letter-spacing: -.015em; }
 .story--big h3 { font-size: 28px; line-height: 1.15; letter-spacing: -.025em; max-width: 520px; }
 .story p { margin-top: 10px; max-width: 520px; font-size: 15px; line-height: 1.55; color: var(--muted); }
