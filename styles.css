@@ -382,3 +382,10 @@ h1, h2, h3 { letter-spacing: -.025em; }
 /* Sección de IA sin botón (página de Automatización): menos aire inferior antes del CTA oscuro (spec 012, RF-05) */
 .ai--compact { padding-bottom: 56px; }
 @media (max-width: 1000px) { .ai--compact { padding-bottom: 32px; } }
+
+/* Teléfono visible en el pie para llamadas de voz (spec 003, RF-11) */
+.footer__phone { flex-basis: 100%; text-align: right; margin-top: 10px; font-size: 14px; color: var(--muted); }
+.footer__phone strong { color: var(--primary-text); font-weight: 700; letter-spacing: .01em; }
+.footer__phone:hover strong { text-decoration: underline; }
+.footer__phone:focus-visible { outline: 3px solid var(--primary-text); outline-offset: 3px; }
+@media (max-width: 1000px) { .footer__phone { text-align: center; margin-top: 8px; padding-block: 12px; font-size: 16px; } .footer small { margin-top: 0; } }
