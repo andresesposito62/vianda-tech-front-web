@@ -188,3 +188,42 @@
   if (!fab || !cta || !('IntersectionObserver' in window)) return;
   new IntersectionObserver(([e]) => fab.classList.toggle('is-hidden', e.isIntersecting)).observe(cta);
 })();
+
+/* Tarjetas de servicios: entrada en cascada, inclinación con luz y arco eléctrico (spec 005) */
+(() => {
+  const list = document.querySelector('.services');
+  if (!list) return;
+  const cards = [...list.querySelectorAll('.card')];
+  const calm = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  cards.forEach((c, i) => {
+    c.style.setProperty('--i', i);
+    c.insertAdjacentHTML('beforeend', '<span class="arc"></span><span class="sheen"></span>');
+  });
+  document.body.insertAdjacentHTML('beforeend', '<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><filter id="electric" x="-10%" y="-10%" width="120%" height="120%"><feTurbulence id="electric-noise" type="fractalNoise" baseFrequency="0.035 0.05" numOctaves="2" seed="1" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="7" xChannelSelector="R" yChannelSelector="G"/></filter></svg>');
+  if (calm) return;
+  // el arco cambia de forma unas 12 veces por segundo, solo mientras hay una tarjeta activa
+  const noise = document.getElementById('electric-noise');
+  let seed = 1;
+  setInterval(() => { if (list.querySelector('.card:hover, .card:active')) noise.setAttribute('seed', (seed = seed % 40 + 1)); }, 80);
+  // inclinación 3D y luz que sigue al cursor (solo con ratón)
+  if (matchMedia('(hover: hover) and (pointer: fine)').matches) {
+    cards.forEach(c => {
+      c.addEventListener('mousemove', e => {
+        const r = c.getBoundingClientRect(), x = e.clientX - r.left, y = e.clientY - r.top;
+        c.style.setProperty('--mx', x + 'px');
+        c.style.setProperty('--my', y + 'px');
+        c.style.transform = 'perspective(700px) rotateX(' + ((y / r.height - .5) * -4) + 'deg) rotateY(' + ((x / r.width - .5) * 3) + 'deg) translateY(-4px)';
+      });
+      c.addEventListener('mouseleave', () => { c.style.transform = ''; });
+    });
+  }
+  // entrada en cascada la primera vez que la sección se ve
+  if (!('IntersectionObserver' in window)) return;
+  list.classList.add('fx-ready');
+  new IntersectionObserver(([e], ob) => {
+    if (!e.isIntersecting) return;
+    ob.disconnect();
+    list.classList.add('play');
+    cards[cards.length - 1].addEventListener('animationend', () => list.classList.add('done'), { once: true });
+  }, { threshold: .2 }).observe(list);
+})();
