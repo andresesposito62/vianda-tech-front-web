@@ -12,7 +12,7 @@ Implementación: `quienes-somos.html` y `styles.css` (bloque "Página interna").
 
 | Bloque | Texto |
 |---|---|
-| Quiénes somos | En Vianda Tech somos una empresa colombiana especializada en soluciones tecnológicas integrales. Acompañamos a empresas en sus procesos de transformación digital, desarrollando e implementando herramientas tecnológicas que optimizan sus operaciones y potencian su crecimiento. |
+| Quiénes somos | Somos una empresa colombiana especializada en soluciones tecnológicas integrales. Acompañamos a empresas en sus procesos de transformación digital, desarrollando e implementando herramientas tecnológicas que optimizan sus operaciones y potencian su crecimiento. |
 | Nuestra misión | Impulsar el crecimiento y la transformación digital de las empresas mediante soluciones tecnológicas innovadoras, funcionales y adaptadas a sus necesidades. |
 | Nuestra visión | Consolidarnos como una empresa colombiana reconocida por la calidad, innovación y confiabilidad de nuestras soluciones tecnológicas, convirtiéndonos en un aliado estratégico para las empresas y proyectando nuestro crecimiento hacia nuevos mercados. |
 | Nuestros valores | Innovación · Compromiso · Calidad · Adaptabilidad · Transparencia · Orientación al cliente. |
