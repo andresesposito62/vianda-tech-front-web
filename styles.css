@@ -166,9 +166,10 @@ h1, h2, h3 { letter-spacing: -.025em; }
 .stat__head { grid-column: 2; grid-row: 1; }
 .story h3, .stat__head h3 { font-size: 28px; line-height: 1.15; font-weight: 700; letter-spacing: -.025em; color: var(--ink); }
 .story p, .stat__head p { margin-top: 10px; max-width: 520px; font-size: 16px; line-height: 1.55; color: var(--muted); }.story--stat { background: transparent; color: var(--primary-text); }
-.stat__preview { display: block; overflow: hidden; border-radius: 12px; background: #fff; color: var(--ink); border: 1px solid rgba(0,49,83,.12); box-shadow: 0 14px 32px rgba(0,49,83,.18); }
+.stat__preview { display: block; overflow: hidden; border-radius: 12px; background: #fff; color: var(--ink); border: 1px solid rgba(0,49,83,.12); box-shadow: 0 2px 4px rgba(0,49,83,.10), 0 18px 36px -8px rgba(0,49,83,.28), 0 44px 80px -20px rgba(0,49,83,.32); transition: transform .35s cubic-bezier(.2,.7,.2,1), box-shadow .35s cubic-bezier(.2,.7,.2,1); }
 .stat__preview img { display: block; width: 100%; height: auto; aspect-ratio: 1260 / 560; object-fit: cover; object-position: top; transition: transform .5s cubic-bezier(.2,.7,.2,1); }
 .stat__preview:hover img { transform: scale(1.03); }
+.stat__preview:hover { transform: translateY(-6px); box-shadow: 0 4px 8px rgba(0,49,83,.12), 0 26px 48px -8px rgba(0,49,83,.32), 0 56px 96px -20px rgba(0,49,83,.36); }
 .stat__preview:focus-visible { outline: 3px solid var(--primary-text); outline-offset: 3px; }
 .stat__preview { position: relative; }
 .stat__caption { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 16px; background: #fff; font-size: 14px; font-weight: 700; line-height: 1.25; }
