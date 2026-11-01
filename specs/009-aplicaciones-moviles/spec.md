@@ -20,7 +20,7 @@ Página interna de la línea «Aplicaciones Móviles» (spec 005, línea 4), con
 | RF-02 | Los títulos «Aplicaciones para tu negocio.» y «Lo que desarrollamos» son propuestas de Vianda Tech, pendientes de aprobación. |
 | RF-03 | Enlaces de entrada: tarjeta «Aplicaciones Móviles» de la galería y submenú «Servicios» en todas las páginas. |
 | RF-04 | SEO propio y entrada en `sitemap.xml` (spec 004). |
-| RF-05 | Bajo la introducción, dos insignias oscuras «Disponible en Google Play» y «Descárgala en el App Store», con ícono propio en SVG (sin imágenes externas). Son enlaces con href=#` pendientes de la URL de cada tienda. Son insignias propias, no las oficiales: si se quieren las oficiales, hay que descargarlas de Google y Apple y respetar sus guías de marca. |
+| RF-05 | Bajo la introducción, dos insignias oscuras «Disponible en Google Play» y «Descárgala en el App Store», con el ícono de cada tienda en SVG (el triángulo de cuatro colores de Google Play y la manzana de Apple), sin imágenes externas. Son enlaces con href=#` pendientes de la URL de cada tienda. Son insignias propias, no las oficiales: si se quieren las oficiales, hay que descargarlas de Google y Apple y respetar sus guías de marca. |
 
 ## Puntos abiertos
 
